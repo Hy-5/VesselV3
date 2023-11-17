@@ -1,4 +1,4 @@
-24591493401297759
+24613589479108724
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90607,6 +90607,27 @@ rotary encoder
 0
 7
 6
+SN74AHCT125N - LogicLevelShifter
+N14
+
+SN74AHCT125N 
+0
+14
+14
+SamacSys_Parts
+1206L05015YR
+1206L035
+Resettable Fuse
+0
+2
+2
+SamacSys_Parts
+4392
+4392-3
+Capacitor
+0
+6
+6
 SamacSys_Parts
 17340353
 1734035-3-2
@@ -90622,6 +90643,27 @@ Capacitor
 2
 2
 SamacSys_Parts
+CAPC2012X95N
+0805 (CL21) 0.95T
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPC2012X140N
+CL21A106KOQNNNE
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPPRD500W65D1025H1350
+10*12.5-
+Capacitor Polarised
+0
+2
+2
+SamacSys_Parts
 COM16911
 COM-16911-1
 Switch
@@ -90629,12 +90671,26 @@ Switch
 4
 4
 SamacSys_Parts
+DIP794W53P254L1930H508Q14N
+N (R-PDIP-T)
+Integrated Circuit
+0
+14
+14
+SamacSys_Parts
 HV5RGB25
 HV-5RGB25-2
 LED
 0
 4
 4
+SamacSys_Parts
+INDPM110100X400N
+1040-18
+Inductor
+0
+2
+2
 SamacSys_Parts
 INP32TATRGB
 IN-P32TATRGB-2
@@ -90657,6 +90713,13 @@ LED
 4
 4
 SamacSys_Parts
+L201021MA04Q
+L201021MA04Q-7
+Switch
+0
+6
+6
+SamacSys_Parts
 NE555DR
 D (R-PDSO-G8)
 Integrated Circuit
@@ -90678,6 +90741,20 @@ Integrated Circuit
 100
 100
 SamacSys_Parts
+RESC1005X40N
+ESR01MZPF5101
+Resistor
+0
+2
+2
+SamacSys_Parts
+RESC2012X65N
+RMCF0805
+Resistor
+0
+2
+2
+SamacSys_Parts
 SKQGAKE010
 SKQGAKE010
 Switch
@@ -90688,6 +90765,20 @@ SamacSys_Parts
 SODFL3816X120N
 SOD-123F
 Diode
+0
+2
+2
+SamacSys_Parts
+SOT95P280X100-6N
+TSOT26_
+Power Supply
+0
+6
+6
+SamacSys_Parts
+SPM10040T4R7MHZR
+SPM10040T-4R7M-HZR-1
+Inductor
 0
 2
 2

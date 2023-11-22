@@ -1,4 +1,4 @@
-24613589479108724
+24630596334498156
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89340,6 +89340,13 @@ Standex Meder SIL reed relais
 0
 4
 4
+Resistor320O
+RESC1005X40N
+
+
+0
+2
+2
 Resistor_SMD
 R_0201_0603Metric
 Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -90636,6 +90643,34 @@ Connector
 9
 9
 SamacSys_Parts
+ATS25ASM1E
+ATS25ASM-1E-3
+Crystal or Oscillator
+0
+2
+2
+SamacSys_Parts
+C0805
+C0805
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPC1005X55N
+GRM15_0.10 L=1.0mm W=0.5mm T=0.5mm
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPC1608X90N
+CL10B225KP8NNNC
+Capacitor
+0
+2
+2
+SamacSys_Parts
 CAPC2012X75N
 CL21C100CBANNNC
 Capacitor
@@ -90678,12 +90713,26 @@ Integrated Circuit
 14
 14
 SamacSys_Parts
+ERJ6ENF1000V
+ERJ6EN
+Resistor
+0
+2
+2
+SamacSys_Parts
 HV5RGB25
 HV-5RGB25-2
 LED
 0
 4
 4
+SamacSys_Parts
+INDC2012X105N
+MLZ2012
+Inductor
+0
+2
+2
 SamacSys_Parts
 INDPM110100X400N
 1040-18
@@ -90727,6 +90776,13 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
+QFN50P500X500X100-33N-D
+32 Pin QFN
+Integrated Circuit
+0
+33
+33
+SamacSys_Parts
 QFP50P1200X1200X160-64N
 LQFP64_a
 Integrated Circuit
@@ -90743,6 +90799,13 @@ Integrated Circuit
 SamacSys_Parts
 RESC1005X40N
 ESR01MZPF5101
+Resistor
+0
+2
+2
+SamacSys_Parts
+RESC2012X60N
+RC0805
 Resistor
 0
 2
@@ -90775,6 +90838,13 @@ Power Supply
 0
 6
 6
+SamacSys_Parts
+SOTFL50P160X60-8N
+DRL0008A
+Integrated Circuit
+0
+8
+8
 SamacSys_Parts
 SPM10040T4R7MHZR
 SPM10040T-4R7M-HZR-1

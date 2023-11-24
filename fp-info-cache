@@ -1,4 +1,4 @@
-24630596334498156
+24649305040244741
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90621,6 +90621,20 @@ SN74AHCT125N
 0
 14
 14
+SPDTSlide
+SW_L102021ML04Q
+
+
+0
+3
+3
+SamacSys_Parts
+450301014042
+450301014042
+Switch
+0
+3
+3
 SamacSys_Parts
 1206L05015YR
 1206L035
@@ -90646,6 +90660,13 @@ SamacSys_Parts
 ATS25ASM1E
 ATS25ASM-1E-3
 Crystal or Oscillator
+0
+2
+2
+SamacSys_Parts
+B74111U0033M060
+B74111U0033M060-1
+Zener Diode
 0
 2
 2
@@ -90713,12 +90734,26 @@ Integrated Circuit
 14
 14
 SamacSys_Parts
+EG1224
+EG1224
+Switch
+0
+7
+7
+SamacSys_Parts
 ERJ6ENF1000V
 ERJ6EN
 Resistor
 0
 2
 2
+SamacSys_Parts
+HUSSP10W40P127_2X5_635X340X420P
+M50-3600542R
+Connector
+0
+10
+10
 SamacSys_Parts
 HV5RGB25
 HV-5RGB25-2
@@ -90776,6 +90811,13 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
+PMEG4005AESFYL
+DSN0603-2 (SOD962-2)_2022_1
+Schottky Diode
+0
+2
+2
+SamacSys_Parts
 QFN50P500X500X100-33N-D
 32 Pin QFN
 Integrated Circuit
@@ -90804,8 +90846,15 @@ Resistor
 2
 2
 SamacSys_Parts
+RESC2012X50N
+CRCW0805
+Resistor
+0
+2
+2
+SamacSys_Parts
 RESC2012X60N
-RC0805
+2A
 Resistor
 0
 2
@@ -90839,6 +90888,13 @@ Power Supply
 6
 6
 SamacSys_Parts
+SOT95P280X145-6N
+SOT23-6(ESDA6V1-5SC6Y)
+Diode
+0
+6
+6
+SamacSys_Parts
 SOTFL50P160X60-8N
 DRL0008A
 Integrated Circuit
@@ -90846,12 +90902,26 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
+SP433701WTG
+SP4337-01WTG-2
+TVS Diode (Bi-directional)
+0
+2
+2
+SamacSys_Parts
 SPM10040T4R7MHZR
 SPM10040T-4R7M-HZR-1
 Inductor
 0
 2
 2
+SamacSys_Parts
+TO228P972X240-3N
+DPAK (TO-252)
+Integrated Circuit
+0
+3
+3
 SamacSys_Parts
 UHD1110FKACL1A13r3q1BBQFMF3
 UHD1110-FKA-CL1A13r3q1BBQFMF3-3
@@ -90873,6 +90943,13 @@ Connector
 0
 16
 16
+SamacSys_Parts
+WURTH-1.27MM-PITCH-2WAY
+WURTH-1.27mm-pitch-2way
+Connector
+0
+10
+10
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://www.aosong.com/en/products-22.html

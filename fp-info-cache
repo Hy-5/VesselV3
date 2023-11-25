@@ -1,4 +1,4 @@
-24649305040244741
+24652706794377185
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -56034,6 +56034,13 @@ heatsink
 0
 0
 0
+Inductor3.9uH
+IND_LQH32NH3R9J23L
+
+
+0
+2
+2
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
@@ -90804,6 +90811,13 @@ Switch
 6
 6
 SamacSys_Parts
+LQH32DN100K23L
+1210 (3225) L=3.2±0.3mm W=2.5±0.2mm T=2.0±0.2mm
+Inductor
+0
+4
+4
+SamacSys_Parts
 NE555DR
 D (R-PDSO-G8)
 Integrated Circuit
@@ -90854,7 +90868,7 @@ Resistor
 2
 SamacSys_Parts
 RESC2012X60N
-2A
+CR0805
 Resistor
 0
 2

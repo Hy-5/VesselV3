@@ -1,4 +1,4 @@
-24652706794377185
+24661211513955696
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90692,6 +90692,13 @@ Capacitor
 2
 2
 SamacSys_Parts
+CAPC1005X56N
+AVX0402(THICKNESS 0.56MM)
+Capacitor
+0
+2
+2
+SamacSys_Parts
 CAPC1608X90N
 CL10B225KP8NNNC
 Capacitor
@@ -90825,6 +90832,20 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
+PEC12R4017FN0024
+PEC12R-4017F-N0024-3
+Undefined or Miscellaneous
+0
+5
+5
+SamacSys_Parts
+PEC12R4230FS0024
+PEC12R-4230F-S0024-2
+Integrated Circuit
+0
+7
+7
+SamacSys_Parts
 PMEG4005AESFYL
 DSN0603-2 (SOD962-2)_2022_1
 Schottky Diode
@@ -90881,6 +90902,13 @@ Resistor
 2
 2
 SamacSys_Parts
+RESC5025X65N
+CRS2010-FX-1001ELF
+Resistor
+0
+2
+2
+SamacSys_Parts
 SKQGAKE010
 SKQGAKE010
 Switch
@@ -90894,6 +90922,13 @@ Diode
 0
 2
 2
+SamacSys_Parts
+SOP65P640X120-14N
+pw(r-pdso-g14)
+Integrated Circuit
+0
+14
+14
 SamacSys_Parts
 SOT95P280X100-6N
 TSOT26_

@@ -3341,10 +3341,6 @@
           (name "DO" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin power_out line (at 0 -2.54 0) (length 7.62)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
         (pin input line (at 40.64 -2.54 180) (length 7.62)
           (name "DI" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
@@ -3352,6 +3348,12 @@
         (pin power_in line (at 40.64 0 180) (length 7.62)
           (name "VDD" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "4684_1_1"
+        (pin passive line (at 0 -2.54 0) (length 7.62)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -11396,10 +11398,10 @@
     (property "Value" "4684" (at 768.35 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 748.03 394.97 0)
+    (property "Footprint" "4684_ADA" (at 748.03 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 748.03 394.97 0)
+    (property "Datasheet" "4684" (at 748.03 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 748.03 394.97 0)
@@ -11421,9 +11423,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ae35608c-2568-41ec-a79f-91cf25e58a9d))
-    (pin "2" (uuid eb8d367d-7f33-4bd5-8c70-2eeecdf41cac))
     (pin "3" (uuid 63c48c74-f08e-4460-8a03-a09396631398))
     (pin "4" (uuid 0f5eaab2-849f-4f44-bf45-b681573531de))
+    (pin "2" (uuid eb8d367d-7f33-4bd5-8c70-2eeecdf41cac))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -11631,10 +11633,10 @@
     (property "Value" "4684" (at 387.35 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 367.03 394.97 0)
+    (property "Footprint" "4684_ADA" (at 367.03 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 367.03 394.97 0)
+    (property "Datasheet" "4684" (at 367.03 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 367.03 394.97 0)
@@ -11656,9 +11658,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 00afcc0b-fffe-45d9-9ed4-6f97499e77a0))
-    (pin "2" (uuid 64986313-0419-4c9c-b9ba-0c3181ad7d10))
     (pin "3" (uuid 1ac44522-3176-4a3f-bf6c-19e68abd65e0))
     (pin "4" (uuid 4eebe0cd-803f-402d-ba38-921319d404ad))
+    (pin "2" (uuid 64986313-0419-4c9c-b9ba-0c3181ad7d10))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -11894,10 +11896,10 @@
     (property "Value" "4684" (at 670.56 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 690.88 419.1 0)
+    (property "Footprint" "4684_ADA" (at 690.88 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 690.88 419.1 0)
+    (property "Datasheet" "4684" (at 690.88 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 690.88 419.1 0)
@@ -11919,9 +11921,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid cb12dad5-5c1a-41b1-9c29-0a2f52ba9a6c))
-    (pin "2" (uuid 965a0fb9-1ed1-45f5-ade5-dc1d68080a24))
     (pin "3" (uuid ca3ae31a-f8b5-41e0-baad-db7f3f5135a9))
     (pin "4" (uuid 8ca84287-a5c1-4c7b-b0d8-2f7f9d7041dd))
+    (pin "2" (uuid 965a0fb9-1ed1-45f5-ade5-dc1d68080a24))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -11984,10 +11986,10 @@
     (property "Value" "4684" (at 528.32 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 548.64 369.57 0)
+    (property "Footprint" "4684_ADA" (at 548.64 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 548.64 369.57 0)
+    (property "Datasheet" "4684" (at 548.64 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 548.64 369.57 0)
@@ -12009,9 +12011,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 40b078e2-b060-43f2-8eac-f6e4783e0140))
-    (pin "2" (uuid 13381494-5d11-4b75-81fc-226a23cde2af))
     (pin "3" (uuid b71d06c1-5823-4d8e-9022-2c6597789525))
     (pin "4" (uuid 8a2366bf-c3ce-4690-800b-e5fd56cfd076))
+    (pin "2" (uuid 13381494-5d11-4b75-81fc-226a23cde2af))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -12265,10 +12267,10 @@
     (property "Value" "4684" (at 434.34 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 454.66 369.57 0)
+    (property "Footprint" "4684_ADA" (at 454.66 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 454.66 369.57 0)
+    (property "Datasheet" "4684" (at 454.66 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 454.66 369.57 0)
@@ -12290,9 +12292,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 89aa2a17-37b0-47af-b6f2-2085ecf2b3cb))
-    (pin "2" (uuid ea0e7e36-59bc-41a7-a81b-17cb576c6106))
     (pin "3" (uuid b964a66a-3803-4923-977f-f35a35514c09))
     (pin "4" (uuid e80415ca-91d2-417b-887d-50a59a5abbaa))
+    (pin "2" (uuid ea0e7e36-59bc-41a7-a81b-17cb576c6106))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -12547,10 +12549,10 @@
     (property "Value" "4684" (at 721.36 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 701.04 440.69 0)
+    (property "Footprint" "4684_ADA" (at 701.04 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 701.04 440.69 0)
+    (property "Datasheet" "4684" (at 701.04 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 701.04 440.69 0)
@@ -12572,9 +12574,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 29de3911-81f5-4d09-8a00-4c41b496ff5f))
-    (pin "2" (uuid c9a1b7b4-13d8-43d8-87c1-61023d860331))
     (pin "3" (uuid 32aa543b-2579-43ea-a079-489d2ba07ae9))
     (pin "4" (uuid 2337dc57-53a7-4902-a3df-5955b8220722))
+    (pin "2" (uuid c9a1b7b4-13d8-43d8-87c1-61023d860331))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -12777,10 +12779,10 @@
     (property "Value" "4684" (at 485.14 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 464.82 295.91 0)
+    (property "Footprint" "4684_ADA" (at 464.82 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 464.82 295.91 0)
+    (property "Datasheet" "4684" (at 464.82 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 464.82 295.91 0)
@@ -12802,9 +12804,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 653f795b-c02e-44f6-af6b-2b2d4b8f0142))
-    (pin "2" (uuid 9d7b322e-5dd4-49cf-80d7-6934e9884a48))
     (pin "3" (uuid e4ee3ba9-7d54-49c4-a8f6-5fcfabe65303))
     (pin "4" (uuid cccee491-bc7c-4408-92f7-db3f3cc8ed20))
+    (pin "2" (uuid 9d7b322e-5dd4-49cf-80d7-6934e9884a48))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -12927,10 +12929,10 @@
     (property "Value" "4684" (at 57.15 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 36.83 394.97 0)
+    (property "Footprint" "4684_ADA" (at 36.83 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 36.83 394.97 0)
+    (property "Datasheet" "4684" (at 36.83 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 36.83 394.97 0)
@@ -12952,9 +12954,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 86a10d41-abed-460a-afce-f63bfaaec659))
-    (pin "2" (uuid c7adb179-1416-4ec3-b09e-259f81eb55f3))
     (pin "3" (uuid f799ae14-73b5-4eaa-af4c-9201ab659c02))
     (pin "4" (uuid efb5d096-66d8-4c4e-beb2-674e1e464b58))
+    (pin "2" (uuid c7adb179-1416-4ec3-b09e-259f81eb55f3))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -13067,10 +13069,10 @@
     (property "Value" "4684" (at 768.35 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 788.67 369.57 0)
+    (property "Footprint" "4684_ADA" (at 788.67 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 788.67 369.57 0)
+    (property "Datasheet" "4684" (at 788.67 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 788.67 369.57 0)
@@ -13092,9 +13094,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 229d97d7-4791-49a9-943b-c647963d61be))
-    (pin "2" (uuid 378995c5-4aab-496e-b8d8-0673626f0e06))
     (pin "3" (uuid 5f5aac6d-5045-4c29-8527-2ac8e24de2dc))
     (pin "4" (uuid 23193ea1-eb7b-4bf3-97d0-9a0b13a4c7bc))
+    (pin "2" (uuid 378995c5-4aab-496e-b8d8-0673626f0e06))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -13250,10 +13252,10 @@
     (property "Value" "4684" (at 434.34 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 454.66 419.1 0)
+    (property "Footprint" "4684_ADA" (at 454.66 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 454.66 419.1 0)
+    (property "Datasheet" "4684" (at 454.66 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 454.66 419.1 0)
@@ -13275,9 +13277,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ae6c786d-8783-45d2-81d0-307d4b1b861f))
-    (pin "2" (uuid 27d79517-cbc7-470e-8c89-3a050de7ef24))
     (pin "3" (uuid dc37a5b2-eb0a-4f30-8698-4fb71b44f8d6))
     (pin "4" (uuid 193591ce-d0f5-4bd7-b089-6bff2050e2dd))
+    (pin "2" (uuid 27d79517-cbc7-470e-8c89-3a050de7ef24))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -13421,10 +13423,10 @@
     (property "Value" "4684" (at 391.16 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 370.84 295.91 0)
+    (property "Footprint" "4684_ADA" (at 370.84 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 370.84 295.91 0)
+    (property "Datasheet" "4684" (at 370.84 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 370.84 295.91 0)
@@ -13446,9 +13448,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2ace8658-8dc9-473f-b5cb-aab067e58bf2))
-    (pin "2" (uuid ca86677f-80d4-44e1-84b9-086d00891290))
     (pin "3" (uuid 28c254ca-cc4d-4182-ad39-dcd419ae1e06))
     (pin "4" (uuid b3962e22-7f64-4550-bce4-edab1e06676b))
+    (pin "2" (uuid ca86677f-80d4-44e1-84b9-086d00891290))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -13640,10 +13642,10 @@
     (property "Value" "4684" (at 485.14 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 464.82 345.44 0)
+    (property "Footprint" "4684_ADA" (at 464.82 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 464.82 345.44 0)
+    (property "Datasheet" "4684" (at 464.82 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 464.82 345.44 0)
@@ -13665,9 +13667,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid beea902f-8226-4fb2-b38e-46029eba401a))
-    (pin "2" (uuid 63a8b8a3-acaa-4883-adce-3e562a993e21))
     (pin "3" (uuid c0eee70e-01b9-4884-a307-e0932a7ceeed))
     (pin "4" (uuid 2fbf4e62-a7cb-4e87-af87-3777ac117199))
+    (pin "2" (uuid 63a8b8a3-acaa-4883-adce-3e562a993e21))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -13686,10 +13688,10 @@
     (property "Value" "4684" (at 250.19 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 229.87 295.91 0)
+    (property "Footprint" "4684_ADA" (at 229.87 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 229.87 295.91 0)
+    (property "Datasheet" "4684" (at 229.87 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 229.87 295.91 0)
@@ -13711,9 +13713,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 439b54b2-d361-4e86-99e5-8d78721aeb40))
-    (pin "2" (uuid 56f7f20a-8752-461f-aed6-f4605aade92c))
     (pin "3" (uuid 285d0240-cb1c-41f5-bc20-14c4d26d3063))
     (pin "4" (uuid bf61f1b2-73b0-4fad-b015-08c684bf494f))
+    (pin "2" (uuid 56f7f20a-8752-461f-aed6-f4605aade92c))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -13905,10 +13907,10 @@
     (property "Value" "4684" (at 576.58 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 596.9 419.1 0)
+    (property "Footprint" "4684_ADA" (at 596.9 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 596.9 419.1 0)
+    (property "Datasheet" "4684" (at 596.9 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 596.9 419.1 0)
@@ -13930,9 +13932,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 39d750fa-dc9a-4e60-90b8-ea8a818c33cc))
-    (pin "2" (uuid 85b8c6d7-d0d4-40d5-88ee-69486a12a3e4))
     (pin "3" (uuid 3621f839-93be-4aca-af48-b213fd0acd18))
     (pin "4" (uuid 844d976e-7eee-414c-a8c8-f25b4069ff30))
+    (pin "2" (uuid 85b8c6d7-d0d4-40d5-88ee-69486a12a3e4))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -14020,10 +14022,10 @@
     (property "Value" "4684" (at 717.55 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 737.87 369.57 0)
+    (property "Footprint" "4684_ADA" (at 737.87 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 737.87 369.57 0)
+    (property "Datasheet" "4684" (at 737.87 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 737.87 369.57 0)
@@ -14045,9 +14047,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8ea73036-963f-44d1-b0d6-327b4ad30fc0))
-    (pin "2" (uuid d32d2f58-1961-4575-8411-1c5d4e44cfe3))
     (pin "3" (uuid 4c4c1e00-06ca-4170-8036-3e6ffd2050b6))
     (pin "4" (uuid 95a49c6f-147f-4405-bbe3-c487fe17fd5f))
+    (pin "2" (uuid d32d2f58-1961-4575-8411-1c5d4e44cfe3))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -14114,10 +14116,10 @@
     (property "Value" "4684" (at 57.15 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 36.83 345.44 0)
+    (property "Footprint" "4684_ADA" (at 36.83 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 36.83 345.44 0)
+    (property "Datasheet" "4684" (at 36.83 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 36.83 345.44 0)
@@ -14139,9 +14141,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 25a57d44-967c-4caa-8e15-2bae9f726ab7))
-    (pin "2" (uuid 91d67d3c-1225-4809-8e1e-fa2044fa89bc))
     (pin "3" (uuid 58d60d1d-a158-46d8-b504-eb23e9ddc6ec))
     (pin "4" (uuid 9565313d-f9d8-4488-a761-ac3897374e6e))
+    (pin "2" (uuid 91d67d3c-1225-4809-8e1e-fa2044fa89bc))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -14160,10 +14162,10 @@
     (property "Value" "4684" (at 292.1 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 312.42 320.04 0)
+    (property "Footprint" "4684_ADA" (at 312.42 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 312.42 320.04 0)
+    (property "Datasheet" "4684" (at 312.42 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 312.42 320.04 0)
@@ -14185,9 +14187,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid efd1bb79-4ea3-468d-8db1-4c21171a0e9b))
-    (pin "2" (uuid cf518e33-89fb-44ce-9b95-20bfb746cb86))
     (pin "3" (uuid e2771cd7-3721-42cc-9ddc-624258cd0eea))
     (pin "4" (uuid 489cbcaa-5e97-4980-9907-9e83d9a29a0c))
+    (pin "2" (uuid cf518e33-89fb-44ce-9b95-20bfb746cb86))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -14357,10 +14359,10 @@
     (property "Value" "4684" (at 57.15 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 36.83 440.69 0)
+    (property "Footprint" "4684_ADA" (at 36.83 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 36.83 440.69 0)
+    (property "Datasheet" "4684" (at 36.83 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 36.83 440.69 0)
@@ -14382,9 +14384,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 13750cb6-26bb-4ae3-a2b8-b07a6d44b7ca))
-    (pin "2" (uuid c9deb265-27b5-43eb-9e61-c72a6aa33f8a))
     (pin "3" (uuid b597a57a-8656-48aa-8f09-6acec25c4b7d))
     (pin "4" (uuid b2d3ac29-ddfd-4eef-9aa0-eee11cf7cb01))
+    (pin "2" (uuid c9deb265-27b5-43eb-9e61-c72a6aa33f8a))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -14478,10 +14480,10 @@
     (property "Value" "4684" (at 292.1 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 312.42 369.57 0)
+    (property "Footprint" "4684_ADA" (at 312.42 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 312.42 369.57 0)
+    (property "Datasheet" "4684" (at 312.42 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 312.42 369.57 0)
@@ -14503,9 +14505,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 49d854b9-8755-4861-a7b9-44e6a0e1bd0f))
-    (pin "2" (uuid be70df41-c5c2-4b68-b04e-9218099a1d6c))
     (pin "3" (uuid e49dcb12-bc3b-4561-b0fe-185d82033a96))
     (pin "4" (uuid 0e7f125f-9e96-4b91-a632-3867d25b0b64))
+    (pin "2" (uuid be70df41-c5c2-4b68-b04e-9218099a1d6c))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -14659,10 +14661,10 @@
     (property "Value" "4684" (at 627.38 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 607.06 295.91 0)
+    (property "Footprint" "4684_ADA" (at 607.06 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 607.06 295.91 0)
+    (property "Datasheet" "4684" (at 607.06 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 607.06 295.91 0)
@@ -14684,9 +14686,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid cd999c3e-dae4-4e94-b879-46d366936304))
-    (pin "2" (uuid aee89113-94f4-4372-96d8-966f3f556be8))
     (pin "3" (uuid c7c7dc47-ea17-4b95-b731-fc4b9d90edbc))
     (pin "4" (uuid 73c03f48-2b86-410c-9953-3ac3c5f49e03))
+    (pin "2" (uuid aee89113-94f4-4372-96d8-966f3f556be8))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -14919,10 +14921,10 @@
     (property "Value" "4684" (at 533.4 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 513.08 345.44 0)
+    (property "Footprint" "4684_ADA" (at 513.08 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 513.08 345.44 0)
+    (property "Datasheet" "4684" (at 513.08 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 513.08 345.44 0)
@@ -14944,9 +14946,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f05253b0-0f14-4fae-a2be-b28f9223a1b2))
-    (pin "2" (uuid fbe572dd-a230-488f-af9b-c284eb54c1b1))
     (pin "3" (uuid 9862f68a-3605-4a37-af8b-3d32290b9f38))
     (pin "4" (uuid ffe9863e-287c-4d4a-a7fe-475d7089ba2a))
+    (pin "2" (uuid fbe572dd-a230-488f-af9b-c284eb54c1b1))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -15100,10 +15102,10 @@
     (property "Value" "4684" (at 533.4 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 513.08 295.91 0)
+    (property "Footprint" "4684_ADA" (at 513.08 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 513.08 295.91 0)
+    (property "Datasheet" "4684" (at 513.08 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 513.08 295.91 0)
@@ -15125,9 +15127,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9bfca3a1-9a12-486e-8094-dcc425d777c1))
-    (pin "2" (uuid d99a6f67-b751-44ec-9bab-0cbf5a33e067))
     (pin "3" (uuid 1d96280c-2fbd-4a55-806f-29102f2f4d04))
     (pin "4" (uuid 3b145f6a-0216-4084-bcbf-ce4dc389fb8f))
+    (pin "2" (uuid d99a6f67-b751-44ec-9bab-0cbf5a33e067))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -15365,10 +15367,10 @@
     (property "Value" "4684" (at 198.12 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 218.44 320.04 0)
+    (property "Footprint" "4684_ADA" (at 218.44 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 218.44 320.04 0)
+    (property "Datasheet" "4684" (at 218.44 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 218.44 320.04 0)
@@ -15390,9 +15392,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9ad8e3e2-ed5b-4cee-8d33-46b1ef5bc12c))
-    (pin "2" (uuid b2c025bd-ed4f-4ea5-b261-f9ee8b288bc9))
     (pin "3" (uuid a5bcc261-5acd-4c17-8960-69cc0bb44656))
     (pin "4" (uuid 1243ceef-e7b9-4b7b-97cb-a8e33ae8c932))
+    (pin "2" (uuid b2c025bd-ed4f-4ea5-b261-f9ee8b288bc9))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -15732,10 +15734,10 @@
     (property "Value" "4684" (at 151.13 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 130.81 394.97 0)
+    (property "Footprint" "4684_ADA" (at 130.81 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 130.81 394.97 0)
+    (property "Datasheet" "4684" (at 130.81 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 130.81 394.97 0)
@@ -15757,9 +15759,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8a3aa05e-0acc-444e-90a8-19b4315c68de))
-    (pin "2" (uuid 70a054b3-5bf6-4855-8995-50431212efb8))
     (pin "3" (uuid ef1ec387-cbc6-457e-98b3-1c2038bd71aa))
     (pin "4" (uuid 1ead8066-6108-47d1-93eb-b1566ae4ce23))
+    (pin "2" (uuid 70a054b3-5bf6-4855-8995-50431212efb8))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -15778,10 +15780,10 @@
     (property "Value" "4684" (at 528.32 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 548.64 419.1 0)
+    (property "Footprint" "4684_ADA" (at 548.64 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 548.64 419.1 0)
+    (property "Datasheet" "4684" (at 548.64 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 548.64 419.1 0)
@@ -15803,9 +15805,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 05ce5f9e-75cb-4f04-a294-4ef66fa7102a))
-    (pin "2" (uuid 3e80514f-83b3-4e20-a9f6-b857770474fb))
     (pin "3" (uuid d0f87575-d525-4b53-a2ef-b373549cabf7))
     (pin "4" (uuid dbe6434e-24d4-4ee8-836e-ab1914d153b3))
+    (pin "2" (uuid 3e80514f-83b3-4e20-a9f6-b857770474fb))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -15868,10 +15870,10 @@
     (property "Value" "4684" (at 201.93 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 181.61 295.91 0)
+    (property "Footprint" "4684_ADA" (at 181.61 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 181.61 295.91 0)
+    (property "Datasheet" "4684" (at 181.61 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 181.61 295.91 0)
@@ -15893,9 +15895,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 595cfaf9-96bf-46d2-a90b-230a983885ac))
-    (pin "2" (uuid dd5adba2-a3b5-48d7-abe5-2ddd19d3bc25))
     (pin "3" (uuid 0e87ae93-8715-465c-9dc4-d0da9052705e))
     (pin "4" (uuid 2f85bc2e-6756-407c-9f83-b77c1920f2f1))
+    (pin "2" (uuid dd5adba2-a3b5-48d7-abe5-2ddd19d3bc25))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -15993,10 +15995,10 @@
     (property "Value" "4684" (at 57.15 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 77.47 419.1 0)
+    (property "Footprint" "4684_ADA" (at 77.47 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 77.47 419.1 0)
+    (property "Datasheet" "4684" (at 77.47 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 77.47 419.1 0)
@@ -16018,9 +16020,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9b74bda9-a5bd-4b3a-b11c-d5b8ad30411d))
-    (pin "2" (uuid 452525f3-f6a9-43c4-be79-2ed79d2559e2))
     (pin "3" (uuid cf27d86d-1deb-4a32-aa52-75a267b873cb))
     (pin "4" (uuid bba517d8-42ce-4f6c-b819-aebf9243f6a1))
+    (pin "2" (uuid 452525f3-f6a9-43c4-be79-2ed79d2559e2))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -16825,10 +16827,10 @@
     (property "Value" "4684" (at 245.11 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 265.43 320.04 0)
+    (property "Footprint" "4684_ADA" (at 265.43 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 265.43 320.04 0)
+    (property "Datasheet" "4684" (at 265.43 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 265.43 320.04 0)
@@ -16850,9 +16852,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 079e9be8-0bd6-4752-8ca4-0b70bbe30b54))
-    (pin "2" (uuid 83eadc24-0e13-41b2-95f6-6b07ce7925d8))
     (pin "3" (uuid da07c107-2e3f-4da0-87ad-4a444db93f68))
     (pin "4" (uuid a300692c-db0f-4e95-9e0e-1a77fac24e2c))
+    (pin "2" (uuid 83eadc24-0e13-41b2-95f6-6b07ce7925d8))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -16953,10 +16955,10 @@
     (property "Value" "4684" (at 57.15 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 77.47 369.57 0)
+    (property "Footprint" "4684_ADA" (at 77.47 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 77.47 369.57 0)
+    (property "Datasheet" "4684" (at 77.47 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 77.47 369.57 0)
@@ -16978,9 +16980,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 629aeeaf-9a24-4c65-899d-9eaa7dcebde3))
-    (pin "2" (uuid a3ae903c-db74-42b6-b64f-d9a19c803e7b))
     (pin "3" (uuid 994bf1ea-caa1-4bbd-86dd-dd5732ad5442))
     (pin "4" (uuid 23631ba1-8a5a-4fe1-bc03-3c68c30e5c1d))
+    (pin "2" (uuid a3ae903c-db74-42b6-b64f-d9a19c803e7b))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -16999,10 +17001,10 @@
     (property "Value" "4684" (at 245.11 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 265.43 369.57 0)
+    (property "Footprint" "4684_ADA" (at 265.43 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 265.43 369.57 0)
+    (property "Datasheet" "4684" (at 265.43 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 265.43 369.57 0)
@@ -17024,9 +17026,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8af4bd47-77f2-4406-bcde-b491ff1b7e1f))
-    (pin "2" (uuid 293f4d93-3fdc-46cc-916e-667a32ccf116))
     (pin "3" (uuid c97f1025-c7c9-42d4-b6ea-5f49244d62a5))
     (pin "4" (uuid a6e3a3e2-a0bf-4770-a5f7-3a3d6d66f99d))
+    (pin "2" (uuid 293f4d93-3fdc-46cc-916e-667a32ccf116))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -17045,10 +17047,10 @@
     (property "Value" "4684" (at 717.55 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 697.23 394.97 0)
+    (property "Footprint" "4684_ADA" (at 697.23 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 697.23 394.97 0)
+    (property "Datasheet" "4684" (at 697.23 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 697.23 394.97 0)
@@ -17070,9 +17072,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8cc74f22-7c4c-4358-9dff-4c207b85a1a7))
-    (pin "2" (uuid 0f3a0dfc-368d-465d-aba5-bd7e205f5159))
     (pin "3" (uuid 3b0d3cdd-4705-4512-be37-115de0295a61))
     (pin "4" (uuid b974aebe-722a-4b90-8888-bd8b0e7bf543))
+    (pin "2" (uuid 0f3a0dfc-368d-465d-aba5-bd7e205f5159))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -17157,10 +17159,10 @@
     (property "Value" "4684" (at 104.14 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 124.46 369.57 0)
+    (property "Footprint" "4684_ADA" (at 124.46 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 124.46 369.57 0)
+    (property "Datasheet" "4684" (at 124.46 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 124.46 369.57 0)
@@ -17182,9 +17184,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 73ac5cb6-aeae-47c1-9a87-c0cec6f9c4f8))
-    (pin "2" (uuid 63583647-66af-4b8a-819f-2ae508285288))
     (pin "3" (uuid 68475222-affc-40c7-97da-a1c261835b5f))
     (pin "4" (uuid 0b523acd-e93e-48bb-b2a8-226a8d223241))
+    (pin "2" (uuid 63583647-66af-4b8a-819f-2ae508285288))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -17539,10 +17541,10 @@
     (property "Value" "4684" (at 575.31 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 595.63 369.57 0)
+    (property "Footprint" "4684_ADA" (at 595.63 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 595.63 369.57 0)
+    (property "Datasheet" "4684" (at 595.63 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 595.63 369.57 0)
@@ -17564,9 +17566,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 60ff5c86-4afb-43e2-9870-43a2c7f6e92e))
-    (pin "2" (uuid 8f20a90f-a93a-4afc-8007-f5b95167806f))
     (pin "3" (uuid 8321baaf-466f-4daf-937d-aee750635718))
     (pin "4" (uuid 395a712e-9cf8-41ad-b4d0-5ad0a00a4720))
+    (pin "2" (uuid 8f20a90f-a93a-4afc-8007-f5b95167806f))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -17585,10 +17587,10 @@
     (property "Value" "4684" (at 340.36 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 360.68 419.1 0)
+    (property "Footprint" "4684_ADA" (at 360.68 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 360.68 419.1 0)
+    (property "Datasheet" "4684" (at 360.68 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 360.68 419.1 0)
@@ -17610,9 +17612,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d87dd114-5c28-4bd7-b5c3-ea65ef51ea78))
-    (pin "2" (uuid 0ca4b692-b8fe-446c-9220-c271cca4d181))
     (pin "3" (uuid b188a5d3-38bb-4a1a-921f-abb1dd0a7f4a))
     (pin "4" (uuid 46574ef6-5bf4-4a98-99e6-6e5d08cd7bd9))
+    (pin "2" (uuid 0ca4b692-b8fe-446c-9220-c271cca4d181))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -17631,10 +17633,10 @@
     (property "Value" "4684" (at 344.17 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 323.85 440.69 0)
+    (property "Footprint" "4684_ADA" (at 323.85 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 323.85 440.69 0)
+    (property "Datasheet" "4684" (at 323.85 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 323.85 440.69 0)
@@ -17656,9 +17658,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b7f6ba0e-cdb7-4928-bca5-9558183e6cc2))
-    (pin "2" (uuid e918e1b8-b080-4ffa-ae69-4bc2fd1ee06d))
     (pin "3" (uuid c575f963-f860-44b4-ab6c-ced8cf68106d))
     (pin "4" (uuid 14ce2df1-236d-41b5-adb0-f14a47a7efe1))
+    (pin "2" (uuid e918e1b8-b080-4ffa-ae69-4bc2fd1ee06d))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -17740,10 +17742,10 @@
     (property "Value" "4684" (at 107.95 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 87.63 295.91 0)
+    (property "Footprint" "4684_ADA" (at 87.63 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 87.63 295.91 0)
+    (property "Datasheet" "4684" (at 87.63 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 87.63 295.91 0)
@@ -17765,9 +17767,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8d9342b3-fc67-485e-9f14-a1bdf49b4bda))
-    (pin "2" (uuid dbd312fd-8836-4488-bb71-29993639351f))
     (pin "3" (uuid 38e099b2-68a5-42e5-b090-4b31d3fcd288))
     (pin "4" (uuid a8ffe00b-f149-43ce-82d7-44cd301830da))
+    (pin "2" (uuid dbd312fd-8836-4488-bb71-29993639351f))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -17868,10 +17870,10 @@
     (property "Value" "4684" (at 391.16 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 370.84 345.44 0)
+    (property "Footprint" "4684_ADA" (at 370.84 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 370.84 345.44 0)
+    (property "Datasheet" "4684" (at 370.84 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 370.84 345.44 0)
@@ -17893,9 +17895,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 034749f8-e39c-4c07-8fc4-45e38a374bc8))
-    (pin "2" (uuid 9906f11e-f5e9-424d-99ba-3f1b7274b3f0))
     (pin "3" (uuid 4bd934e3-dcbb-4aa6-b502-58e0a9228393))
     (pin "4" (uuid f8648c17-ba53-48de-9d0b-96d2938cb0b6))
+    (pin "2" (uuid 9906f11e-f5e9-424d-99ba-3f1b7274b3f0))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -18630,10 +18632,10 @@
     (property "Value" "4684" (at 575.31 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 595.63 320.04 0)
+    (property "Footprint" "4684_ADA" (at 595.63 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 595.63 320.04 0)
+    (property "Datasheet" "4684" (at 595.63 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 595.63 320.04 0)
@@ -18655,9 +18657,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 94fb5bd8-4132-4a77-ba35-eda59143591c))
-    (pin "2" (uuid fe8b3ada-13a6-418b-9e35-252097cd6cfe))
     (pin "3" (uuid a5747a0c-6cc9-4856-a509-f7325e3a88a3))
     (pin "4" (uuid 2530867d-2e05-49cd-b790-b0fa87e5e192))
+    (pin "2" (uuid fe8b3ada-13a6-418b-9e35-252097cd6cfe))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -18767,10 +18769,10 @@
     (property "Value" "4684" (at 528.32 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 548.64 320.04 0)
+    (property "Footprint" "4684_ADA" (at 548.64 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 548.64 320.04 0)
+    (property "Datasheet" "4684" (at 548.64 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 548.64 320.04 0)
@@ -18792,9 +18794,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5abd9fc3-35f1-4492-bae4-9bd1469d299f))
-    (pin "2" (uuid 1ff7b793-59b5-44ac-9394-430b16080abb))
     (pin "3" (uuid 70780c8c-d43a-4ea8-adcb-b17213db2d7a))
     (pin "4" (uuid fe7cdfe6-164c-4b8e-aa29-27b42f52acdc))
+    (pin "2" (uuid 1ff7b793-59b5-44ac-9394-430b16080abb))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -19023,10 +19025,10 @@
     (property "Value" "4684" (at 57.15 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 77.47 320.04 0)
+    (property "Footprint" "4684_ADA" (at 77.47 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 77.47 320.04 0)
+    (property "Datasheet" "4684" (at 77.47 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 77.47 320.04 0)
@@ -19048,9 +19050,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8b9a1bf4-ae6e-4127-ae41-95f81c25e578))
-    (pin "2" (uuid e37d02ee-60cf-4c79-b667-5c182397890b))
     (pin "3" (uuid c87faeca-66bc-49b0-85b2-cc0392c79029))
     (pin "4" (uuid 0022b6d0-68e7-4de1-80c4-b62306d0e6f6))
+    (pin "2" (uuid e37d02ee-60cf-4c79-b667-5c182397890b))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -19069,10 +19071,10 @@
     (property "Value" "4684" (at 485.14 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 464.82 440.69 0)
+    (property "Footprint" "4684_ADA" (at 464.82 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 464.82 440.69 0)
+    (property "Datasheet" "4684" (at 464.82 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 464.82 440.69 0)
@@ -19094,9 +19096,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4a124396-3535-4e5f-924d-971b88d1d59b))
-    (pin "2" (uuid 43bd0856-481c-4284-ab33-c05a55694ad1))
     (pin "3" (uuid 7d6b0492-e684-415e-ab3e-4644ddba1d76))
     (pin "4" (uuid ad585e7d-3b6d-4877-a471-f458be0a17c6))
+    (pin "2" (uuid 43bd0856-481c-4284-ab33-c05a55694ad1))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -19255,10 +19257,10 @@
     (property "Value" "4684" (at 576.58 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 556.26 394.97 0)
+    (property "Footprint" "4684_ADA" (at 556.26 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 556.26 394.97 0)
+    (property "Datasheet" "4684" (at 556.26 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 556.26 394.97 0)
@@ -19280,9 +19282,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2dfc8a0a-cdab-49a4-8514-965f2b8fa37b))
-    (pin "2" (uuid ca68ab69-45b4-403b-bc7c-c6a64526b974))
     (pin "3" (uuid 76f76aa3-5efa-497d-86b1-d655ce2e15b1))
     (pin "4" (uuid c7f822a3-9ecf-400b-9084-52ddbbd34127))
+    (pin "2" (uuid ca68ab69-45b4-403b-bc7c-c6a64526b974))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -19301,10 +19303,10 @@
     (property "Value" "4684" (at 198.12 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 218.44 419.1 0)
+    (property "Footprint" "4684_ADA" (at 218.44 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 218.44 419.1 0)
+    (property "Datasheet" "4684" (at 218.44 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 218.44 419.1 0)
@@ -19326,9 +19328,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c6ae90c4-6665-4ad1-a95e-335ae0aca096))
-    (pin "2" (uuid 28329b13-9ad5-42f0-aead-c715d4d04f6d))
     (pin "3" (uuid 53ed607c-d320-4449-ac49-766214ee5ced))
     (pin "4" (uuid c20eee9b-7364-4a6f-8f6c-94810029f839))
+    (pin "2" (uuid 28329b13-9ad5-42f0-aead-c715d4d04f6d))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -20406,10 +20408,10 @@
     (property "Value" "4684" (at 201.93 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 181.61 345.44 0)
+    (property "Footprint" "4684_ADA" (at 181.61 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 181.61 345.44 0)
+    (property "Datasheet" "4684" (at 181.61 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 181.61 345.44 0)
@@ -20431,9 +20433,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 62e317d2-f1ee-4e16-a03a-ba0c715bbc51))
-    (pin "2" (uuid 82725073-41fa-4096-881c-348348d1b9ae))
     (pin "3" (uuid 71952553-5e05-47a6-85e9-c7b5c1cba7da))
     (pin "4" (uuid 9456c388-5e27-41ce-8f9b-9cdec5908e5f))
+    (pin "2" (uuid 82725073-41fa-4096-881c-348348d1b9ae))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -20658,10 +20660,10 @@
     (property "Value" "4684" (at 674.37 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 654.05 440.69 0)
+    (property "Footprint" "4684_ADA" (at 654.05 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 654.05 440.69 0)
+    (property "Datasheet" "4684" (at 654.05 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 654.05 440.69 0)
@@ -20683,9 +20685,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c4231731-42d4-450f-9da9-f000edddad12))
-    (pin "2" (uuid 581a21a4-1d3d-497e-9b19-29a5382913e0))
     (pin "3" (uuid d10fe363-e503-4cc9-8083-ebc5d09b70a4))
     (pin "4" (uuid ec587787-b603-4878-b02f-f82270e51dca))
+    (pin "2" (uuid 581a21a4-1d3d-497e-9b19-29a5382913e0))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -21075,10 +21077,10 @@
     (property "Value" "4684" (at 768.35 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 788.67 320.04 0)
+    (property "Footprint" "4684_ADA" (at 788.67 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 788.67 320.04 0)
+    (property "Datasheet" "4684" (at 788.67 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 788.67 320.04 0)
@@ -21100,9 +21102,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0b7fb5ad-74f9-4c6a-ab8b-39c618727304))
-    (pin "2" (uuid 0a9ff08a-9aa5-425c-b141-8cdfce1ac5af))
     (pin "3" (uuid b5c5898e-6d14-4bd1-b533-2bc67fe630df))
     (pin "4" (uuid 901f2e2d-4f0e-4e03-b069-aa99b60871ac))
+    (pin "2" (uuid 0a9ff08a-9aa5-425c-b141-8cdfce1ac5af))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -21290,10 +21292,10 @@
     (property "Value" "4684" (at 340.36 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 360.68 369.57 0)
+    (property "Footprint" "4684_ADA" (at 360.68 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 360.68 369.57 0)
+    (property "Datasheet" "4684" (at 360.68 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 360.68 369.57 0)
@@ -21315,9 +21317,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 48125970-f630-4292-9b66-a06ee32604d9))
-    (pin "2" (uuid bcedcda6-4eba-41ce-911f-679cd5b51357))
     (pin "3" (uuid e0d9c946-4a31-4ba2-abbe-993e909eaae6))
     (pin "4" (uuid 72f8472e-3e2e-42ed-b428-7c50a4994650))
+    (pin "2" (uuid bcedcda6-4eba-41ce-911f-679cd5b51357))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -21650,10 +21652,10 @@
     (property "Value" "4684" (at 580.39 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 560.07 345.44 0)
+    (property "Footprint" "4684_ADA" (at 560.07 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 560.07 345.44 0)
+    (property "Datasheet" "4684" (at 560.07 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 560.07 345.44 0)
@@ -21675,9 +21677,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1f6406c1-7a91-414d-915f-d94f832d12f3))
-    (pin "2" (uuid c62eae7a-55ee-44e6-b8ba-a07759e2ae7a))
     (pin "3" (uuid 23bbc78b-07d6-4e45-a215-337d43cc86bf))
     (pin "4" (uuid d72d0326-0097-40cd-b4ff-6d237845ae87))
+    (pin "2" (uuid c62eae7a-55ee-44e6-b8ba-a07759e2ae7a))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -21907,10 +21909,10 @@
     (property "Value" "4684" (at 297.18 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 276.86 295.91 0)
+    (property "Footprint" "4684_ADA" (at 276.86 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 276.86 295.91 0)
+    (property "Datasheet" "4684" (at 276.86 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 276.86 295.91 0)
@@ -21932,9 +21934,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid faab338f-c9f8-4fc7-a1d5-8696de6585b1))
-    (pin "2" (uuid 8dc4532f-2e4f-497d-8aa9-58af62b79714))
     (pin "3" (uuid f2778238-6ab7-4eb4-9ca4-56db26fe6786))
     (pin "4" (uuid eaa7c5ac-1961-4f64-a88c-50ecce45031c))
+    (pin "2" (uuid 8dc4532f-2e4f-497d-8aa9-58af62b79714))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -21953,10 +21955,10 @@
     (property "Value" "4684" (at 293.37 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 273.05 394.97 0)
+    (property "Footprint" "4684_ADA" (at 273.05 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 273.05 394.97 0)
+    (property "Datasheet" "4684" (at 273.05 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 273.05 394.97 0)
@@ -21978,9 +21980,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7401544e-1a51-4456-83eb-fca45c7284a2))
-    (pin "2" (uuid a3c992b5-2d6b-4956-bc55-e6966a10eaf7))
     (pin "3" (uuid 468d9a3e-9eea-403f-bdcb-6e12fafa4136))
     (pin "4" (uuid 2f1f056c-1771-4b0e-bfcf-189e3bab6b21))
+    (pin "2" (uuid a3c992b5-2d6b-4956-bc55-e6966a10eaf7))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -22043,10 +22045,10 @@
     (property "Value" "4684" (at 154.94 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 134.62 440.69 0)
+    (property "Footprint" "4684_ADA" (at 134.62 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 134.62 440.69 0)
+    (property "Datasheet" "4684" (at 134.62 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 134.62 440.69 0)
@@ -22068,9 +22070,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2803109d-99e0-4a61-be38-5779e41f9986))
-    (pin "2" (uuid b41e68f9-ea62-4e97-b228-1c794b417a3e))
     (pin "3" (uuid 0b0d2551-f16d-444c-9e58-ab3b6d267415))
     (pin "4" (uuid 040125b1-b1d8-44c0-89ec-71cba80f7d78))
+    (pin "2" (uuid b41e68f9-ea62-4e97-b228-1c794b417a3e))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -22158,10 +22160,10 @@
     (property "Value" "4684" (at 768.35 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 748.03 345.44 0)
+    (property "Footprint" "4684_ADA" (at 748.03 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 748.03 345.44 0)
+    (property "Datasheet" "4684" (at 748.03 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 748.03 345.44 0)
@@ -22183,9 +22185,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 98638be8-70b8-49f2-9146-9819815bbcc7))
-    (pin "2" (uuid a0a7c8f8-0ee7-49bc-846a-2d699f4acef7))
     (pin "3" (uuid 380ba6a7-f1c7-4ffd-a85e-9d823694576d))
     (pin "4" (uuid f56c01b3-96ff-46c9-ab88-2da1452288ab))
+    (pin "2" (uuid a0a7c8f8-0ee7-49bc-846a-2d699f4acef7))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -22420,10 +22422,10 @@
     (property "Value" "4684" (at 107.95 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 87.63 440.69 0)
+    (property "Footprint" "4684_ADA" (at 87.63 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 87.63 440.69 0)
+    (property "Datasheet" "4684" (at 87.63 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 87.63 440.69 0)
@@ -22445,9 +22447,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 074961af-4ee8-405e-b01e-7f1c8a2a8701))
-    (pin "2" (uuid 56770810-00c6-47c3-8599-7dd66781d631))
     (pin "3" (uuid 05cd1097-3a58-4d35-9ca0-dc81812f1119))
     (pin "4" (uuid a2382d5e-21c9-4a4a-9068-c55b3f32905e))
+    (pin "2" (uuid 56770810-00c6-47c3-8599-7dd66781d631))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -22504,10 +22506,10 @@
     (property "Value" "4684" (at 387.35 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 407.67 419.1 0)
+    (property "Footprint" "4684_ADA" (at 407.67 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 407.67 419.1 0)
+    (property "Datasheet" "4684" (at 407.67 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 407.67 419.1 0)
@@ -22529,9 +22531,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f09d5de6-e1a3-4de5-8025-f18f13c9554a))
-    (pin "2" (uuid d6f1528b-c826-4251-8f8e-049dfaf0d75e))
     (pin "3" (uuid f4a69329-096d-4eca-8b9a-5ee140c3d727))
     (pin "4" (uuid c1784a29-f283-446c-a8e7-fa116ed29430))
+    (pin "2" (uuid d6f1528b-c826-4251-8f8e-049dfaf0d75e))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -22591,10 +22593,10 @@
     (property "Value" "4684" (at 670.56 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 690.88 369.57 0)
+    (property "Footprint" "4684_ADA" (at 690.88 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 690.88 369.57 0)
+    (property "Datasheet" "4684" (at 690.88 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 690.88 369.57 0)
@@ -22616,9 +22618,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid dbe7cb64-bfa1-4dc0-bd90-c06888b72612))
-    (pin "2" (uuid 7b877b5c-24b6-488d-8ca9-668f2570016c))
     (pin "3" (uuid 674fab58-486a-4744-9629-6609e1f0f252))
     (pin "4" (uuid a63bc618-b0ca-4d18-93f1-7ec5c6af33dc))
+    (pin "2" (uuid 7b877b5c-24b6-488d-8ca9-668f2570016c))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23008,10 +23010,10 @@
     (property "Value" "4684" (at 674.37 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 654.05 295.91 0)
+    (property "Footprint" "4684_ADA" (at 654.05 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 654.05 295.91 0)
+    (property "Datasheet" "4684" (at 654.05 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 654.05 295.91 0)
@@ -23033,9 +23035,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3324b835-9ea7-474f-a814-2870817831f6))
-    (pin "2" (uuid ec2e868e-d3be-465a-a049-e51cc56f4eef))
     (pin "3" (uuid 4400c8aa-19aa-4fac-bf5b-62f17ba41412))
     (pin "4" (uuid 3b1c3fa5-6a2a-4d8e-9523-f1e7f9582471))
+    (pin "2" (uuid ec2e868e-d3be-465a-a049-e51cc56f4eef))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23054,10 +23056,10 @@
     (property "Value" "4684" (at 154.94 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 134.62 345.44 0)
+    (property "Footprint" "4684_ADA" (at 134.62 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 134.62 345.44 0)
+    (property "Datasheet" "4684" (at 134.62 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 134.62 345.44 0)
@@ -23079,9 +23081,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8e73e4af-45d0-4f6e-a1d4-132a3cba2840))
-    (pin "2" (uuid 92536a4e-75e1-4091-9fa7-d3029c0810c7))
     (pin "3" (uuid 7361141a-4ba2-4b35-89b2-3a55c6f74795))
     (pin "4" (uuid 22220ade-d981-44dd-9300-620030ca23e4))
+    (pin "2" (uuid 92536a4e-75e1-4091-9fa7-d3029c0810c7))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23125,10 +23127,10 @@
     (property "Value" "4684" (at 481.33 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 461.01 394.97 0)
+    (property "Footprint" "4684_ADA" (at 461.01 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 461.01 394.97 0)
+    (property "Datasheet" "4684" (at 461.01 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 461.01 394.97 0)
@@ -23150,9 +23152,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4bfc4e18-89b6-49ec-af1c-4d95b18ef863))
-    (pin "2" (uuid 3636384a-2bb4-4bf1-816d-d37a636f642b))
     (pin "3" (uuid 4a64fabb-1b7c-4f8d-a247-65b8fc940ac9))
     (pin "4" (uuid b6dabcba-439f-4371-a8e3-e1aa5ae9d290))
+    (pin "2" (uuid 3636384a-2bb4-4bf1-816d-d37a636f642b))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23240,10 +23242,10 @@
     (property "Value" "4684" (at 104.14 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 124.46 320.04 0)
+    (property "Footprint" "4684_ADA" (at 124.46 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 124.46 320.04 0)
+    (property "Datasheet" "4684" (at 124.46 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 124.46 320.04 0)
@@ -23265,9 +23267,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 19de4438-a7cd-4547-859d-4ac89e8cdbe9))
-    (pin "2" (uuid 41528d1f-249a-41f2-ae77-51c60fab4bb7))
     (pin "3" (uuid 5bbc2fe8-5651-4d65-a8ec-0175d83da0cc))
     (pin "4" (uuid 8d972a8e-00e7-4569-896a-96c099dfffc4))
+    (pin "2" (uuid 41528d1f-249a-41f2-ae77-51c60fab4bb7))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23434,10 +23436,10 @@
     (property "Value" "4684" (at 340.36 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 360.68 320.04 0)
+    (property "Footprint" "4684_ADA" (at 360.68 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 360.68 320.04 0)
+    (property "Datasheet" "4684" (at 360.68 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 360.68 320.04 0)
@@ -23459,9 +23461,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b3e69016-a6ca-40b3-880f-7dba8a615aba))
-    (pin "2" (uuid 45631729-3415-4608-91e4-589ee04f0f12))
     (pin "3" (uuid 74de81dc-4d4c-45b0-b2ce-652b40ba5094))
     (pin "4" (uuid f2c782cb-6b27-45ba-aa35-9da7d781a26b))
+    (pin "2" (uuid 45631729-3415-4608-91e4-589ee04f0f12))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23539,10 +23541,10 @@
     (property "Value" "4684" (at 104.14 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 124.46 419.1 0)
+    (property "Footprint" "4684_ADA" (at 124.46 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 124.46 419.1 0)
+    (property "Datasheet" "4684" (at 124.46 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 124.46 419.1 0)
@@ -23564,9 +23566,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 084c6bd1-299d-47e4-bb2c-b39af199da37))
-    (pin "2" (uuid 244dc23e-4bac-42c0-8cf0-492c350947c0))
     (pin "3" (uuid c904946c-c34a-4245-b21e-d7e20b30e5a1))
     (pin "4" (uuid 09e472c6-d1af-4ce2-8f09-6ecaed077aac))
+    (pin "2" (uuid 244dc23e-4bac-42c0-8cf0-492c350947c0))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23623,10 +23625,10 @@
     (property "Value" "4684" (at 580.39 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 560.07 295.91 0)
+    (property "Footprint" "4684_ADA" (at 560.07 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 560.07 295.91 0)
+    (property "Datasheet" "4684" (at 560.07 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 560.07 295.91 0)
@@ -23648,9 +23650,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e78de828-bd54-45ba-b2d7-1f50c80dd298))
-    (pin "2" (uuid e92b4460-b076-4c2c-8782-20dc3b9e559d))
     (pin "3" (uuid e304c26c-84c2-42a6-aa39-b5a40333532a))
     (pin "4" (uuid 7fc679a1-2961-44c2-b6c9-d1655cac3d4a))
+    (pin "2" (uuid e92b4460-b076-4c2c-8782-20dc3b9e559d))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -23987,10 +23989,10 @@
     (property "Value" "4684" (at 387.35 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 407.67 369.57 0)
+    (property "Footprint" "4684_ADA" (at 407.67 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 407.67 369.57 0)
+    (property "Datasheet" "4684" (at 407.67 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 407.67 369.57 0)
@@ -24012,9 +24014,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid bd84316b-0a26-4e1d-a88a-ae3ba8dec96d))
-    (pin "2" (uuid 72d9e865-be7b-4b44-a371-da76c2b9e291))
     (pin "3" (uuid 593912a2-2451-43b1-bc51-72bb7bf3c122))
     (pin "4" (uuid 76396a38-428b-4834-974d-1bb95183e2a3))
+    (pin "2" (uuid 72d9e865-be7b-4b44-a371-da76c2b9e291))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -24351,10 +24353,10 @@
     (property "Value" "4684" (at 721.36 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 701.04 295.91 0)
+    (property "Footprint" "4684_ADA" (at 701.04 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 701.04 295.91 0)
+    (property "Datasheet" "4684" (at 701.04 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 701.04 295.91 0)
@@ -24376,9 +24378,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d8c1aea3-e165-4d2c-80fe-98e7211813c4))
-    (pin "2" (uuid 21c90584-75db-460e-8407-b4be50131cd8))
     (pin "3" (uuid dfc0810e-91dd-4133-9762-5bb89f058110))
     (pin "4" (uuid cde1d2e4-5b62-4600-b8cb-75a625efd966))
+    (pin "2" (uuid 21c90584-75db-460e-8407-b4be50131cd8))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -24438,10 +24440,10 @@
     (property "Value" "4684" (at 154.94 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 134.62 295.91 0)
+    (property "Footprint" "4684_ADA" (at 134.62 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 134.62 295.91 0)
+    (property "Datasheet" "4684" (at 134.62 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 134.62 295.91 0)
@@ -24463,9 +24465,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5f3459c3-21b9-4434-ae38-4340aa8be198))
-    (pin "2" (uuid d709360d-8635-408f-bd25-85a7a63ceab4))
     (pin "3" (uuid dc3bc4dd-9a33-45e0-b3f2-05d0b589507f))
     (pin "4" (uuid 1b0fda6c-05ac-4aa6-bd72-8b83eec9d453))
+    (pin "2" (uuid d709360d-8635-408f-bd25-85a7a63ceab4))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -24484,10 +24486,10 @@
     (property "Value" "4684" (at 627.38 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 607.06 345.44 0)
+    (property "Footprint" "4684_ADA" (at 607.06 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 607.06 345.44 0)
+    (property "Datasheet" "4684" (at 607.06 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 607.06 345.44 0)
@@ -24509,9 +24511,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1bef3269-98d5-4b13-8ab0-b41afe9f0891))
-    (pin "2" (uuid fd457da0-493c-4201-92eb-ece0a220f953))
     (pin "3" (uuid ab3d8ebd-a357-416c-bc1c-859effaad9ad))
     (pin "4" (uuid 8eaa08b9-bfb2-4bfd-b08d-c34ca513a44b))
+    (pin "2" (uuid fd457da0-493c-4201-92eb-ece0a220f953))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -24599,10 +24601,10 @@
     (property "Value" "4684" (at 151.13 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 171.45 369.57 0)
+    (property "Footprint" "4684_ADA" (at 171.45 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 171.45 369.57 0)
+    (property "Datasheet" "4684" (at 171.45 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 171.45 369.57 0)
@@ -24624,9 +24626,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d9dc3853-d78b-4b09-9083-e0b7714bfb8b))
-    (pin "2" (uuid f4783ade-7a3f-42ff-8071-26d5f731d77a))
     (pin "3" (uuid d5bd736b-44b2-4b78-8aff-856a6d5b9f2e))
     (pin "4" (uuid d0e39a2c-d9c9-475f-a63f-843a3ab01b39))
+    (pin "2" (uuid f4783ade-7a3f-42ff-8071-26d5f731d77a))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -24811,10 +24813,10 @@
     (property "Value" "4684" (at 151.13 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 171.45 419.1 0)
+    (property "Footprint" "4684_ADA" (at 171.45 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 171.45 419.1 0)
+    (property "Datasheet" "4684" (at 171.45 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 171.45 419.1 0)
@@ -24836,9 +24838,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2c10928c-55d4-48fd-b545-296ba12477a6))
-    (pin "2" (uuid d05abcbc-7ff8-4492-8ccd-738a73ae1ae8))
     (pin "3" (uuid 98dd48e7-6f39-4e6a-8c44-67d7dad10a72))
     (pin "4" (uuid 5c244628-4010-4d6c-ab32-9a1deee6bfc2))
+    (pin "2" (uuid d05abcbc-7ff8-4492-8ccd-738a73ae1ae8))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -24857,10 +24859,10 @@
     (property "Value" "4684" (at 481.33 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 501.65 419.1 0)
+    (property "Footprint" "4684_ADA" (at 501.65 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 501.65 419.1 0)
+    (property "Datasheet" "4684" (at 501.65 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 501.65 419.1 0)
@@ -24882,9 +24884,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 86273f3d-a2b7-4937-9995-b7788710d5a8))
-    (pin "2" (uuid c8d4ddc2-3953-4f8a-8428-bfb08f7585c2))
     (pin "3" (uuid 4b266108-6e38-4b7f-b6d8-4299f6776b56))
     (pin "4" (uuid 58012eed-8a3f-4b59-8422-bc02136d45ee))
+    (pin "2" (uuid c8d4ddc2-3953-4f8a-8428-bfb08f7585c2))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -24903,10 +24905,10 @@
     (property "Value" "4684" (at 250.19 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 229.87 345.44 0)
+    (property "Footprint" "4684_ADA" (at 229.87 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 229.87 345.44 0)
+    (property "Datasheet" "4684" (at 229.87 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 229.87 345.44 0)
@@ -24928,9 +24930,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1a43944c-d19c-4bf8-a73a-4cca7798d825))
-    (pin "2" (uuid 6f612eec-99bb-4f48-86dd-8956244c44f6))
     (pin "3" (uuid c001b793-9236-4a43-97b6-93027e826b83))
     (pin "4" (uuid 8daa1301-7b18-474a-86d5-4a645ddbee90))
+    (pin "2" (uuid 6f612eec-99bb-4f48-86dd-8956244c44f6))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25037,10 +25039,10 @@
     (property "Value" "4684" (at 768.35 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 788.67 419.1 0)
+    (property "Footprint" "4684_ADA" (at 788.67 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 788.67 419.1 0)
+    (property "Datasheet" "4684" (at 788.67 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 788.67 419.1 0)
@@ -25062,9 +25064,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b1f1053d-8f0f-4f25-8c7c-c95035b170c6))
-    (pin "2" (uuid de3d6219-90cd-4c1e-a06f-af5172865da7))
     (pin "3" (uuid 421a95a9-2bc9-4fb7-86dc-f0090c3f862d))
     (pin "4" (uuid 1ef2ebb6-6318-40ac-aed3-f4dc9dd38bec))
+    (pin "2" (uuid de3d6219-90cd-4c1e-a06f-af5172865da7))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25127,10 +25129,10 @@
     (property "Value" "4684" (at 768.35 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 748.03 295.91 0)
+    (property "Footprint" "4684_ADA" (at 748.03 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 748.03 295.91 0)
+    (property "Datasheet" "4684" (at 748.03 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 748.03 295.91 0)
@@ -25152,9 +25154,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7f378494-e3e2-4bb7-a456-dd34a52a49ac))
-    (pin "2" (uuid 8e1ca9d4-ba52-4512-b04c-4fcca3ebb828))
     (pin "3" (uuid 52ceeca8-4db7-41e6-a2aa-172c08bec871))
     (pin "4" (uuid c0b7b5e8-bc3a-4b5a-98aa-ebae0bebf98a))
+    (pin "2" (uuid 8e1ca9d4-ba52-4512-b04c-4fcca3ebb828))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25211,10 +25213,10 @@
     (property "Value" "4684" (at 532.13 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 511.81 440.69 0)
+    (property "Footprint" "4684_ADA" (at 511.81 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 511.81 440.69 0)
+    (property "Datasheet" "4684" (at 511.81 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 511.81 440.69 0)
@@ -25236,9 +25238,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 674eff5f-ecf2-4934-b5d9-c51314fa7ec1))
-    (pin "2" (uuid b7faa727-904c-4b7c-95b6-2511aab9a07f))
     (pin "3" (uuid 167bf171-bd15-4e22-ac1c-3b2530665777))
     (pin "4" (uuid 5ff6b5f6-aae3-4124-bf76-95c8e1bd456e))
+    (pin "2" (uuid b7faa727-904c-4b7c-95b6-2511aab9a07f))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25323,10 +25325,10 @@
     (property "Value" "4684" (at 438.15 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 417.83 345.44 0)
+    (property "Footprint" "4684_ADA" (at 417.83 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 417.83 345.44 0)
+    (property "Datasheet" "4684" (at 417.83 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 417.83 345.44 0)
@@ -25348,9 +25350,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 00084383-0dfe-4406-b785-4c964a933999))
-    (pin "2" (uuid e157f9d3-d951-4055-aad2-f32919bef8e8))
     (pin "3" (uuid afd979de-3a35-4b5d-8c0a-bbddd81a0ffa))
     (pin "4" (uuid a2c171c4-e6d4-46c3-a73f-e2865c9a4bcb))
+    (pin "2" (uuid e157f9d3-d951-4055-aad2-f32919bef8e8))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25369,10 +25371,10 @@
     (property "Value" "4684" (at 198.12 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 218.44 369.57 0)
+    (property "Footprint" "4684_ADA" (at 218.44 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 218.44 369.57 0)
+    (property "Datasheet" "4684" (at 218.44 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 218.44 369.57 0)
@@ -25394,9 +25396,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid aa0553d1-802c-49b9-adb1-5db300eb2e90))
-    (pin "2" (uuid 7c16baa8-1d71-4a70-ad1c-f18d9e32db77))
     (pin "3" (uuid 27047427-ceb1-4569-9791-849770e4242a))
     (pin "4" (uuid afea547c-3035-415b-9a46-054991bdbad6))
+    (pin "2" (uuid 7c16baa8-1d71-4a70-ad1c-f18d9e32db77))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25604,10 +25606,10 @@
     (property "Value" "4684" (at 107.95 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 87.63 345.44 0)
+    (property "Footprint" "4684_ADA" (at 87.63 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 87.63 345.44 0)
+    (property "Datasheet" "4684" (at 87.63 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 87.63 345.44 0)
@@ -25629,9 +25631,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 09cd9f01-4245-4b9d-83ab-1ddf73c62d5e))
-    (pin "2" (uuid 75205a40-22ac-45fd-aaca-0defa4dabd70))
     (pin "3" (uuid 4af3f351-6402-49c5-9066-fb61d37ad154))
     (pin "4" (uuid a6ba7c25-a42c-457f-92c6-a04ff352ebc4))
+    (pin "2" (uuid 75205a40-22ac-45fd-aaca-0defa4dabd70))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25792,10 +25794,10 @@
     (property "Value" "4684" (at 438.15 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 417.83 295.91 0)
+    (property "Footprint" "4684_ADA" (at 417.83 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 417.83 295.91 0)
+    (property "Datasheet" "4684" (at 417.83 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 417.83 295.91 0)
@@ -25817,9 +25819,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9b789284-dfb6-4250-861b-6d4f4d8b28a0))
-    (pin "2" (uuid 939f77f7-dd23-4fcb-8523-d59a564eb214))
     (pin "3" (uuid 11a3036a-a13b-4a85-b911-fab3eee4cacd))
     (pin "4" (uuid 62665c5d-98c3-46e3-baf7-daeba4f901f5))
+    (pin "2" (uuid 939f77f7-dd23-4fcb-8523-d59a564eb214))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25904,10 +25906,10 @@
     (property "Value" "4684" (at 344.17 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 323.85 345.44 0)
+    (property "Footprint" "4684_ADA" (at 323.85 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 323.85 345.44 0)
+    (property "Datasheet" "4684" (at 323.85 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 323.85 345.44 0)
@@ -25929,9 +25931,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e8c58e27-eaf7-4964-8188-5399ab2c23a3))
-    (pin "2" (uuid 7d56c905-c446-4419-8cba-7ee2df8fa17f))
     (pin "3" (uuid c84da5c6-0f14-4502-871d-0d75237c0030))
     (pin "4" (uuid a14e20fc-6c45-4826-bf93-647b34a3f1dc))
+    (pin "2" (uuid 7d56c905-c446-4419-8cba-7ee2df8fa17f))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -25991,10 +25993,10 @@
     (property "Value" "4684" (at 297.18 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 276.86 345.44 0)
+    (property "Footprint" "4684_ADA" (at 276.86 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 276.86 345.44 0)
+    (property "Datasheet" "4684" (at 276.86 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 276.86 345.44 0)
@@ -26016,9 +26018,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 68b55b26-4360-413f-8ccd-8b15506adeb4))
-    (pin "2" (uuid 9ed9ee6a-c0de-4d6f-8b07-e45899a1da80))
     (pin "3" (uuid f25afc41-6ab4-49fb-9120-0e747ad70dda))
     (pin "4" (uuid 40053da1-4bc6-4cd1-bacc-6f3cc58cd315))
+    (pin "2" (uuid 9ed9ee6a-c0de-4d6f-8b07-e45899a1da80))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -26081,10 +26083,10 @@
     (property "Value" "4684" (at 717.55 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 737.87 320.04 0)
+    (property "Footprint" "4684_ADA" (at 737.87 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 737.87 320.04 0)
+    (property "Datasheet" "4684" (at 737.87 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 737.87 320.04 0)
@@ -26106,9 +26108,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 387bc502-ee04-43ec-adcb-3f689f2cd352))
-    (pin "2" (uuid 4dd50cc3-db82-422b-9c07-251fa2caea2e))
     (pin "3" (uuid 0fbaba3e-3cd1-4890-8565-c7a975f8f075))
     (pin "4" (uuid 20c7bb1d-9834-4596-98d5-caea839b2bd5))
+    (pin "2" (uuid 4dd50cc3-db82-422b-9c07-251fa2caea2e))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -26212,10 +26214,10 @@
     (property "Value" "4684" (at 529.59 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 509.27 394.97 0)
+    (property "Footprint" "4684_ADA" (at 509.27 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 509.27 394.97 0)
+    (property "Datasheet" "4684" (at 509.27 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 509.27 394.97 0)
@@ -26237,9 +26239,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c60abf44-dd39-479e-a995-36313a31b39f))
-    (pin "2" (uuid a8c29b8f-8e14-472c-a5c0-c265707298a7))
     (pin "3" (uuid 6c7095d6-d31a-4385-872e-19ef868c17e0))
     (pin "4" (uuid 674168bd-330a-48a0-bd0e-988767d91c9d))
+    (pin "2" (uuid a8c29b8f-8e14-472c-a5c0-c265707298a7))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -26296,10 +26298,10 @@
     (property "Value" "4684" (at 623.57 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 643.89 320.04 0)
+    (property "Footprint" "4684_ADA" (at 643.89 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 643.89 320.04 0)
+    (property "Datasheet" "4684" (at 643.89 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 643.89 320.04 0)
@@ -26321,9 +26323,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 42eef2b0-f4c3-4ca2-8d63-cd00cd42af1c))
-    (pin "2" (uuid d9df67c3-3c05-41bc-8c92-406d16e25324))
     (pin "3" (uuid 94fbc059-db95-40fc-9e63-f63a80fcbad1))
     (pin "4" (uuid 9f3acf1b-3bb9-48c4-a911-26371b7208cb))
+    (pin "2" (uuid d9df67c3-3c05-41bc-8c92-406d16e25324))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -26465,10 +26467,10 @@
     (property "Value" "4684" (at 198.12 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 177.8 394.97 0)
+    (property "Footprint" "4684_ADA" (at 177.8 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 177.8 394.97 0)
+    (property "Datasheet" "4684" (at 177.8 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 177.8 394.97 0)
@@ -26490,9 +26492,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d7f41080-a807-44dd-8899-986cba501e66))
-    (pin "2" (uuid 6c287b91-d322-4d86-8fef-dd0cc5faddab))
     (pin "3" (uuid 49feec4e-1d22-4753-9817-31e187cb2c74))
     (pin "4" (uuid 10d5e24c-51ff-4280-830c-fd48df000ff7))
+    (pin "2" (uuid 6c287b91-d322-4d86-8fef-dd0cc5faddab))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -26786,10 +26788,10 @@
     (property "Value" "4684" (at 434.34 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 454.66 320.04 0)
+    (property "Footprint" "4684_ADA" (at 454.66 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 454.66 320.04 0)
+    (property "Datasheet" "4684" (at 454.66 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 454.66 320.04 0)
@@ -26811,9 +26813,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9309fb17-4320-4c50-88d6-9cd6178561f4))
-    (pin "2" (uuid 81c43b48-8069-47a4-b6f3-90fbb7d46621))
     (pin "3" (uuid 8cb621c6-4637-4628-b67b-d4cf699c20a6))
     (pin "4" (uuid 32b85c87-ccd4-41b9-9d97-383a452f5cf2))
+    (pin "2" (uuid 81c43b48-8069-47a4-b6f3-90fbb7d46621))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -27210,10 +27212,10 @@
     (property "Value" "4684" (at 627.38 443.23 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 607.06 440.69 0)
+    (property "Footprint" "4684_ADA" (at 607.06 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 607.06 440.69 0)
+    (property "Datasheet" "4684" (at 607.06 440.69 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 607.06 440.69 0)
@@ -27235,9 +27237,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5381bd4f-f675-48b3-8d64-d82a1913bff5))
-    (pin "2" (uuid d4eddb86-1b2f-4bda-98d8-a16d1bef4ad5))
     (pin "3" (uuid eb5a2bab-7641-47ba-b43f-b13124cea7de))
     (pin "4" (uuid a56c015c-ea7f-4dc6-8982-2c0e6b6aa002))
+    (pin "2" (uuid d4eddb86-1b2f-4bda-98d8-a16d1bef4ad5))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -27369,10 +27371,10 @@
     (property "Value" "4684" (at 104.14 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 83.82 394.97 0)
+    (property "Footprint" "4684_ADA" (at 83.82 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 83.82 394.97 0)
+    (property "Datasheet" "4684" (at 83.82 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 83.82 394.97 0)
@@ -27394,9 +27396,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0c653a46-3d8a-4d79-97b3-44864b727ced))
-    (pin "2" (uuid 1b3b49da-8b4e-4a97-978e-7e1792d4c274))
     (pin "3" (uuid 6703f49d-a155-4a9b-b02e-99e218b062c1))
     (pin "4" (uuid 38027660-970e-41ca-8eed-3d12b40d6023))
+    (pin "2" (uuid 1b3b49da-8b4e-4a97-978e-7e1792d4c274))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -27626,10 +27628,10 @@
     (property "Value" "4684" (at 151.13 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 171.45 320.04 0)
+    (property "Footprint" "4684_ADA" (at 171.45 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 171.45 320.04 0)
+    (property "Datasheet" "4684" (at 171.45 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 171.45 320.04 0)
@@ -27651,9 +27653,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ee0dbf54-8094-4938-b5b5-20811c8535ef))
-    (pin "2" (uuid dbf035c2-a537-43cf-9c23-c99972f33679))
     (pin "3" (uuid feb2a25a-8f30-4446-a6a9-2d4a176c13a0))
     (pin "4" (uuid d52943ce-f7fb-40d0-9440-6e1b525fc99c))
+    (pin "2" (uuid dbf035c2-a537-43cf-9c23-c99972f33679))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -27748,10 +27750,10 @@
     (property "Value" "4684" (at 623.57 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 603.25 394.97 0)
+    (property "Footprint" "4684_ADA" (at 603.25 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 603.25 394.97 0)
+    (property "Datasheet" "4684" (at 603.25 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 603.25 394.97 0)
@@ -27773,9 +27775,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c7871d32-a3a9-4f46-abde-20772910698b))
-    (pin "2" (uuid 9a64fd8e-a05a-4da9-8882-88a0b368d384))
     (pin "3" (uuid 5c158316-858c-4c51-b9b0-bdd70914f8a6))
     (pin "4" (uuid cd6ce2d7-bd72-4969-aea3-fec9320e918d))
+    (pin "2" (uuid 9a64fd8e-a05a-4da9-8882-88a0b368d384))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -27838,10 +27840,10 @@
     (property "Value" "4684" (at 623.57 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 643.89 419.1 0)
+    (property "Footprint" "4684_ADA" (at 643.89 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 643.89 419.1 0)
+    (property "Datasheet" "4684" (at 643.89 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 643.89 419.1 0)
@@ -27863,9 +27865,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f0e6e0a6-5f1b-4d80-bbbf-07d691ab72a6))
-    (pin "2" (uuid aefeb1e3-2d3a-4fab-b5b8-414ca15fed89))
     (pin "3" (uuid 3d6237de-54df-41dc-a706-900c378866a1))
     (pin "4" (uuid 00edf4b4-4e44-462c-b54f-cbf6a144f549))
+    (pin "2" (uuid aefeb1e3-2d3a-4fab-b5b8-414ca15fed89))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -28073,10 +28075,10 @@
     (property "Value" "4684" (at 340.36 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 320.04 394.97 0)
+    (property "Footprint" "4684_ADA" (at 320.04 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 320.04 394.97 0)
+    (property "Datasheet" "4684" (at 320.04 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 320.04 394.97 0)
@@ -28098,9 +28100,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8c1dd96d-5aa9-483e-b5ac-1f88943fed57))
-    (pin "2" (uuid fba2f9f8-bc4b-4d76-9d97-1e6b3aaa40f0))
     (pin "3" (uuid 1138a60c-5e9c-4929-b31e-d29abec2225b))
     (pin "4" (uuid b2f3c68e-674f-4973-8f16-40e0eeb8223f))
+    (pin "2" (uuid fba2f9f8-bc4b-4d76-9d97-1e6b3aaa40f0))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -28169,10 +28171,10 @@
     (property "Value" "4684" (at 481.33 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 501.65 369.57 0)
+    (property "Footprint" "4684_ADA" (at 501.65 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 501.65 369.57 0)
+    (property "Datasheet" "4684" (at 501.65 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 501.65 369.57 0)
@@ -28194,9 +28196,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d6dfb465-7e39-4b8d-8fe8-46b46f57a6f4))
-    (pin "2" (uuid cab03501-531f-45dd-a857-403972bfc1c7))
     (pin "3" (uuid 8c3a9d00-b2c9-47ac-871f-1a5b98de0a37))
     (pin "4" (uuid 321c8f94-cef7-44e6-a126-b7ad5f8f76ae))
+    (pin "2" (uuid cab03501-531f-45dd-a857-403972bfc1c7))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -28470,10 +28472,10 @@
     (property "Value" "4684" (at 344.17 298.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 323.85 295.91 0)
+    (property "Footprint" "4684_ADA" (at 323.85 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 323.85 295.91 0)
+    (property "Datasheet" "4684" (at 323.85 295.91 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 323.85 295.91 0)
@@ -28495,9 +28497,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4801546e-4b6a-46b2-bfa9-3cecf560379c))
-    (pin "2" (uuid a78c9f82-458a-4039-8d52-b58324835373))
     (pin "3" (uuid 3c181d75-0092-4dd2-b063-150ce39f242b))
     (pin "4" (uuid 6a0718d7-30b6-49da-bc39-b186915359a4))
+    (pin "2" (uuid a78c9f82-458a-4039-8d52-b58324835373))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -28560,10 +28562,10 @@
     (property "Value" "4684" (at 293.37 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 313.69 419.1 0)
+    (property "Footprint" "4684_ADA" (at 313.69 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 313.69 419.1 0)
+    (property "Datasheet" "4684" (at 313.69 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 313.69 419.1 0)
@@ -28585,9 +28587,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 17efb773-3748-4e3a-a95c-598f1128db6e))
-    (pin "2" (uuid b2d21ece-bddb-4aff-aaf8-5ab175be50b8))
     (pin "3" (uuid 98cc204e-cba2-4722-8c86-8d58abeb9377))
     (pin "4" (uuid bfdd6146-81dd-46b6-9c13-ebbf51bd509e))
+    (pin "2" (uuid b2d21ece-bddb-4aff-aaf8-5ab175be50b8))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -28979,10 +28981,10 @@
     (property "Value" "4684" (at 623.57 372.11 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 643.89 369.57 0)
+    (property "Footprint" "4684_ADA" (at 643.89 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 643.89 369.57 0)
+    (property "Datasheet" "4684" (at 643.89 369.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 643.89 369.57 0)
@@ -29004,9 +29006,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d713d0ce-17cf-48d3-9400-9e9e65efba12))
-    (pin "2" (uuid 3ccf417e-9a74-46e6-a8da-069f42475d64))
     (pin "3" (uuid 8eec152d-997d-4eb7-8710-02c3ada566c4))
     (pin "4" (uuid c0073714-1075-46ca-bb9d-f1f9bc17d35d))
+    (pin "2" (uuid 3ccf417e-9a74-46e6-a8da-069f42475d64))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -29179,10 +29181,10 @@
     (property "Value" "4684" (at 481.33 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 501.65 320.04 0)
+    (property "Footprint" "4684_ADA" (at 501.65 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 501.65 320.04 0)
+    (property "Datasheet" "4684" (at 501.65 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 501.65 320.04 0)
@@ -29204,9 +29206,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 382442a4-eb9d-44aa-9b4f-7e9e05567e68))
-    (pin "2" (uuid 891a2940-0688-4360-8a4b-617a472f7986))
     (pin "3" (uuid 30c50c2b-3a99-46b5-9fed-6a920f38aa28))
     (pin "4" (uuid fcaf02e6-4b5c-42d7-b651-9727de5be60c))
+    (pin "2" (uuid 891a2940-0688-4360-8a4b-617a472f7986))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -29395,10 +29397,10 @@
     (property "Value" "4684" (at 434.34 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 414.02 394.97 0)
+    (property "Footprint" "4684_ADA" (at 414.02 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 414.02 394.97 0)
+    (property "Datasheet" "4684" (at 414.02 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 414.02 394.97 0)
@@ -29420,9 +29422,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 28d83d10-038d-471e-8436-2aa9c0fe44f9))
-    (pin "2" (uuid 4ee09495-3d53-4445-985d-66a2b7f67af0))
     (pin "3" (uuid 3b6fa05a-5859-4dbb-ace1-c6e37fb942be))
     (pin "4" (uuid 91dfe01e-7a04-4f74-a3ce-c4c81a87dba6))
+    (pin "2" (uuid 4ee09495-3d53-4445-985d-66a2b7f67af0))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -29482,10 +29484,10 @@
     (property "Value" "4684" (at 246.38 397.51 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 226.06 394.97 0)
+    (property "Footprint" "4684_ADA" (at 226.06 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 226.06 394.97 0)
+    (property "Datasheet" "4684" (at 226.06 394.97 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 226.06 394.97 0)
@@ -29507,9 +29509,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 96ecc92a-8261-4f00-97a9-6523dfe4cba0))
-    (pin "2" (uuid 90fbaf25-e748-4416-94f0-40ce5dc4d21d))
     (pin "3" (uuid d0d7b42c-0ee6-4efb-a087-58d474633e9c))
     (pin "4" (uuid 852518c0-f3ba-4e04-99f3-8fe91befc7fb))
+    (pin "2" (uuid 90fbaf25-e748-4416-94f0-40ce5dc4d21d))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -29553,10 +29555,10 @@
     (property "Value" "4684" (at 387.35 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 407.67 320.04 0)
+    (property "Footprint" "4684_ADA" (at 407.67 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 407.67 320.04 0)
+    (property "Datasheet" "4684" (at 407.67 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 407.67 320.04 0)
@@ -29578,9 +29580,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ba80cda1-822c-4a72-95b7-7807cf4fa918))
-    (pin "2" (uuid 9b502f4a-91d0-4792-bce9-fe82027e7874))
     (pin "3" (uuid 615f84b2-9a4d-4069-b5ea-eb8d64ce88fe))
     (pin "4" (uuid 5fdab304-364f-4a46-b6fa-239c95d04f37))
+    (pin "2" (uuid 9b502f4a-91d0-4792-bce9-fe82027e7874))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -29665,10 +29667,10 @@
     (property "Value" "4684" (at 245.11 421.64 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 265.43 419.1 0)
+    (property "Footprint" "4684_ADA" (at 265.43 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 265.43 419.1 0)
+    (property "Datasheet" "4684" (at 265.43 419.1 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 265.43 419.1 0)
@@ -29690,9 +29692,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 72cf8ef2-33e0-456b-91ea-18d35684a248))
-    (pin "2" (uuid 62177d2f-f4a0-4897-a720-9562a7ba3706))
     (pin "3" (uuid a7743a7d-ea5f-47d1-85c3-562b41e69dec))
     (pin "4" (uuid 18cbeb96-2497-47fb-9491-811fdc783f97))
+    (pin "2" (uuid 62177d2f-f4a0-4897-a720-9562a7ba3706))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -29938,10 +29940,10 @@
     (property "Value" "4684" (at 721.36 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 701.04 345.44 0)
+    (property "Footprint" "4684_ADA" (at 701.04 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 701.04 345.44 0)
+    (property "Datasheet" "4684" (at 701.04 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 701.04 345.44 0)
@@ -29963,9 +29965,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ab7be374-059b-4504-b7d2-db959c8b38ea))
-    (pin "2" (uuid 69dea620-daa0-4a96-9328-c47712cddf7a))
     (pin "3" (uuid 75118227-16dc-487a-94b5-e1cf7d752f9d))
     (pin "4" (uuid f61a2d21-18d5-4a2f-a344-e67e66951630))
+    (pin "2" (uuid 69dea620-daa0-4a96-9328-c47712cddf7a))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -29984,10 +29986,10 @@
     (property "Value" "4684" (at 670.56 322.58 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 690.88 320.04 0)
+    (property "Footprint" "4684_ADA" (at 690.88 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 690.88 320.04 0)
+    (property "Datasheet" "4684" (at 690.88 320.04 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 690.88 320.04 0)
@@ -30009,9 +30011,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid bd1644b4-517c-4493-b552-add718cfdf25))
-    (pin "2" (uuid 17ea01b7-1218-491c-948b-7a64ce55826b))
     (pin "3" (uuid 17b3a866-76a1-460f-8f55-5e127c6dd78a))
     (pin "4" (uuid e6de520a-922f-41c5-aa68-d7744719d6f0))
+    (pin "2" (uuid 17ea01b7-1218-491c-948b-7a64ce55826b))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"
@@ -30030,10 +30032,10 @@
     (property "Value" "4684" (at 674.37 347.98 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA" (at 654.05 345.44 0)
+    (property "Footprint" "4684_ADA" (at 654.05 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/datasheet/2/737/4684_WS2812B_2020_V1_3_EN-1900866.pdf" (at 654.05 345.44 0)
+    (property "Datasheet" "4684" (at 654.05 345.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "DigikeyPartNumber" "1528-4684-ND" (at 654.05 345.44 0)
@@ -30055,9 +30057,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 90f7f546-7713-411a-afbe-8b2b3929838f))
-    (pin "2" (uuid ce301ad4-74f1-47ff-8043-b43431ba1de5))
     (pin "3" (uuid e84c4f02-42bd-4a11-a6fa-968fece5f450))
     (pin "4" (uuid de9548cc-ef2f-474e-861a-624849303252))
+    (pin "2" (uuid ce301ad4-74f1-47ff-8043-b43431ba1de5))
     (instances
       (project "VesselV3"
         (path "/7364f6a3-b999-47c8-8f6d-f83e5421d1ed"

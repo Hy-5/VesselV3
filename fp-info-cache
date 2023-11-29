@@ -1,4 +1,4 @@
-24661211513955696
+24664613623610843
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90678,6 +90678,13 @@ Zener Diode
 2
 2
 SamacSys_Parts
+BC55PASQX
+SOT1061_2022
+Transistor BJT PNP
+0
+4
+4
+SamacSys_Parts
 C0805
 C0805
 Capacitor
@@ -90924,11 +90931,18 @@ Diode
 2
 SamacSys_Parts
 SOP65P640X120-14N
-pw(r-pdso-g14)
+PW (R-PDSO-G14)
 Integrated Circuit
 0
 14
 14
+SamacSys_Parts
+SOT65P212X110-5N
+SOT353-1
+Integrated Circuit
+0
+5
+5
 SamacSys_Parts
 SOT95P280X100-6N
 TSOT26_

@@ -1,4 +1,4 @@
-24664613623610843
+24668016582288860
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90685,6 +90685,13 @@ Transistor BJT PNP
 4
 4
 SamacSys_Parts
+C0603
+C0603
+Capacitor
+0
+2
+2
+SamacSys_Parts
 C0805
 C0805
 Capacitor
@@ -90838,6 +90845,13 @@ Integrated Circuit
 0
 8
 8
+SamacSys_Parts
+PEC12R3220FS0024
+PEC12R-3220F-S0024-2
+Switch
+0
+7
+7
 SamacSys_Parts
 PEC12R4017FN0024
 PEC12R-4017F-N0024-3

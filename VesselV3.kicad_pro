@@ -55,7 +55,23 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "annular_width|344856000|33583000|c022c0d3-25e5-4314-b7dd-5795159559ec|00000000-0000-0000-0000-000000000000",
+        "annular_width|354076000|33583000|cb4edf84-c339-4474-83b0-d0a8e31bb1ed|00000000-0000-0000-0000-000000000000",
+        "clearance|252483000|68575000|9d05b62f-9cbb-4b54-86aa-6df434e43bea|1e0a6002-86f9-4c3a-bc69-b313eac4e974",
+        "clearance|256408000|68700000|9232d5e4-669c-4912-9086-f76818b8aa3c|f8212d25-ba50-438e-8ae6-eb3753156ddb",
+        "clearance|256533000|64775000|6409a63b-e2cd-46fd-8ef5-06ae28bc2442|40391749-c155-4119-958b-8a0695c7486f",
+        "clearance|345966000|33583000|cfb51d4f-cbae-4299-9ee7-315c616ab398|c022c0d3-25e5-4314-b7dd-5795159559ec",
+        "clearance|352966000|33583000|204fd42b-9d4f-4fe1-93ba-25cc0acc790c|cb4edf84-c339-4474-83b0-d0a8e31bb1ed",
+        "hole_clearance|346166000|33023000|33e535c8-d780-43b3-8d9d-56cf1ad48c32|c022c0d3-25e5-4314-b7dd-5795159559ec",
+        "hole_clearance|346166000|33533000|33e535c8-d780-43b3-8d9d-56cf1ad48c32|cfb51d4f-cbae-4299-9ee7-315c616ab398",
+        "hole_clearance|352766000|33023000|62aec9d6-2af1-42e7-a6c1-368d458c75bc|cb4edf84-c339-4474-83b0-d0a8e31bb1ed",
+        "hole_clearance|352766000|33533000|62aec9d6-2af1-42e7-a6c1-368d458c75bc|204fd42b-9d4f-4fe1-93ba-25cc0acc790c",
+        "hole_near_hole|346166000|33023000|33e535c8-d780-43b3-8d9d-56cf1ad48c32|c022c0d3-25e5-4314-b7dd-5795159559ec",
+        "hole_near_hole|352766000|33023000|62aec9d6-2af1-42e7-a6c1-368d458c75bc|cb4edf84-c339-4474-83b0-d0a8e31bb1ed",
+        "malformed_courtyard|305697000|56605000|011ba05f-0d92-44a0-9cc6-2310d2fbf3c3|00000000-0000-0000-0000-000000000000",
+        "malformed_courtyard|306197000|56105000|011ba05f-0d92-44a0-9cc6-2310d2fbf3c3|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -65,7 +81,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",

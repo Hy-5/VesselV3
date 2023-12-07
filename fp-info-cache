@@ -1,4 +1,4 @@
-24668016582288860
+24671420266836773
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90867,6 +90867,13 @@ Integrated Circuit
 7
 7
 SamacSys_Parts
+PMEG3005AESFYL
+SOD962-2
+Diode ESD (Bi-directional)
+0
+2
+2
+SamacSys_Parts
 PMEG4005AESFYL
 DSN0603-2 (SOD962-2)_2022_1
 Schottky Diode
@@ -90936,6 +90943,13 @@ Switch
 0
 4
 4
+SamacSys_Parts
+SODFL3517X110N
+SOD123W
+Schottky Diode
+0
+2
+2
 SamacSys_Parts
 SODFL3816X120N
 SOD-123F

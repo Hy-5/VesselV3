@@ -55,28 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "annular_width|344856000|33583000|c022c0d3-25e5-4314-b7dd-5795159559ec|00000000-0000-0000-0000-000000000000",
-        "annular_width|354076000|33583000|cb4edf84-c339-4474-83b0-d0a8e31bb1ed|00000000-0000-0000-0000-000000000000",
-        "clearance|252483000|68575000|9d05b62f-9cbb-4b54-86aa-6df434e43bea|1e0a6002-86f9-4c3a-bc69-b313eac4e974",
-        "clearance|256408000|68700000|9232d5e4-669c-4912-9086-f76818b8aa3c|f8212d25-ba50-438e-8ae6-eb3753156ddb",
-        "clearance|256533000|64775000|6409a63b-e2cd-46fd-8ef5-06ae28bc2442|40391749-c155-4119-958b-8a0695c7486f",
-        "clearance|345966000|33583000|cfb51d4f-cbae-4299-9ee7-315c616ab398|c022c0d3-25e5-4314-b7dd-5795159559ec",
-        "clearance|352966000|33583000|204fd42b-9d4f-4fe1-93ba-25cc0acc790c|cb4edf84-c339-4474-83b0-d0a8e31bb1ed",
-        "footprint_type_mismatch|349466000|30483000|123a8a9b-8b97-4bd9-9a39-692c369cc0da|00000000-0000-0000-0000-000000000000",
-        "hole_clearance|346166000|33023000|33e535c8-d780-43b3-8d9d-56cf1ad48c32|c022c0d3-25e5-4314-b7dd-5795159559ec",
-        "hole_clearance|346166000|33533000|33e535c8-d780-43b3-8d9d-56cf1ad48c32|cfb51d4f-cbae-4299-9ee7-315c616ab398",
-        "hole_clearance|352766000|33023000|62aec9d6-2af1-42e7-a6c1-368d458c75bc|cb4edf84-c339-4474-83b0-d0a8e31bb1ed",
-        "hole_clearance|352766000|33533000|62aec9d6-2af1-42e7-a6c1-368d458c75bc|204fd42b-9d4f-4fe1-93ba-25cc0acc790c",
-        "hole_near_hole|346166000|33023000|33e535c8-d780-43b3-8d9d-56cf1ad48c32|c022c0d3-25e5-4314-b7dd-5795159559ec",
-        "hole_near_hole|352766000|33023000|62aec9d6-2af1-42e7-a6c1-368d458c75bc|cb4edf84-c339-4474-83b0-d0a8e31bb1ed",
-        "malformed_courtyard|305697000|56605000|53c3f3e9-caa9-4e3c-8c21-e4555e6073b2|00000000-0000-0000-0000-000000000000",
-        "malformed_courtyard|306197000|56105000|53c3f3e9-caa9-4e3c-8c21-e4555e6073b2|00000000-0000-0000-0000-000000000000",
-        "missing_courtyard|178911300|207168700|c11f1bd4-0dc5-4179-9e85-ee1dbea3a252|00000000-0000-0000-0000-000000000000",
-        "missing_courtyard|253365000|38608000|23566c1d-0165-4b3d-a8eb-48ab061793cb|00000000-0000-0000-0000-000000000000",
-        "missing_courtyard|314642500|130968700|71cb789f-09fd-472a-9cbe-2f21fcded836|00000000-0000-0000-0000-000000000000",
-        "missing_courtyard|321786300|159543700|87e3bc2d-1c1e-430c-885b-39b981dd31c3|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -549,6 +528,40 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "On{slash}OffSwitch",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "VBUS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -574,7 +587,7 @@
         "pattern": "GND"
       },
       {
-        "netclass": "+5V",
+        "netclass": "On{slash}OffSwitch",
         "pattern": "On{slash}OffSwitch"
       },
       {

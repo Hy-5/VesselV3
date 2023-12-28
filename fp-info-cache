@@ -1,4 +1,4 @@
-24671420266836773
+24676551733199608
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63714,7 +63714,7 @@ mounting hole 6.4mm m6
 9
 1
 MountingHole
-MountingHole_6.5mm
+MountingHole_6.5mm_1
 Mounting Hole 6.5mm, no annular
 mounting hole 6.5mm no annular
 0
@@ -63783,6 +63783,13 @@ mounting hole 6mm
 0
 9
 1
+MountingHole
+MountingHole_7mm
+Mounting Hole 6.5mm, no annular
+mounting hole 6.5mm no annular
+0
+0
+0
 MountingHole
 MountingHole_8.4mm_M8
 Mounting Hole 8.4mm, no annular, M8
@@ -90685,6 +90692,13 @@ Transistor BJT PNP
 4
 4
 SamacSys_Parts
+BTS6143D
+PG-TO252-5-11_FFW
+Integrated Circuit
+0
+5
+5
+SamacSys_Parts
 C0603
 C0603
 Capacitor
@@ -90735,7 +90749,7 @@ Capacitor
 2
 SamacSys_Parts
 CAPC2012X140N
-CL21A106KOQNNNE
+0.079" L x 0.049" W (2.00mm x 1.25mm)
 Capacitor
 0
 2
@@ -90917,14 +90931,14 @@ Resistor
 2
 SamacSys_Parts
 RESC2012X60N
-CR0805
+2A
 Resistor
 0
 2
 2
 SamacSys_Parts
 RESC2012X65N
-RMCF0805
+WR08
 Resistor
 0
 2
@@ -90957,6 +90971,13 @@ Diode
 0
 2
 2
+SamacSys_Parts
+SON50P200X200X65-9N-D
+CP-8-10
+Integrated Circuit
+0
+9
+9
 SamacSys_Parts
 SOP65P640X120-14N
 PW (R-PDSO-G14)

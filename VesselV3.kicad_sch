@@ -25917,7 +25917,7 @@
     (property "Value" "MountingHole" (at 429.26 205.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MountingHole:MountingHole_6.5mm" (at 426.72 204.47 0)
+    (property "Footprint" "MountingHole:MountingHole_7mm" (at 426.72 204.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 426.72 204.47 0)

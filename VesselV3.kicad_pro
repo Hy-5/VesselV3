@@ -70,8 +70,6 @@
         "lib_footprint_issues|307709201|85779080|4117bcb9-3772-4a3c-8470-cf9948b88c44|00000000-0000-0000-0000-000000000000",
         "lib_footprint_issues|355168200|46329600|cc1f9169-198f-48bb-a471-b30de7cffa43|00000000-0000-0000-0000-000000000000",
         "lib_footprint_issues|65272748|53382858|94f5386f-f612-4e14-bb41-44e4cb7bd6a2|00000000-0000-0000-0000-000000000000",
-        "malformed_courtyard|244991000|63246000|53c3f3e9-caa9-4e3c-8c21-e4555e6073b2|00000000-0000-0000-0000-000000000000",
-        "malformed_courtyard|245491000|62746000|53c3f3e9-caa9-4e3c-8c21-e4555e6073b2|00000000-0000-0000-0000-000000000000",
         "missing_courtyard|178911300|207168700|c11f1bd4-0dc5-4179-9e85-ee1dbea3a252|00000000-0000-0000-0000-000000000000",
         "missing_courtyard|314642500|130968700|71cb789f-09fd-472a-9cbe-2f21fcded836|00000000-0000-0000-0000-000000000000",
         "missing_courtyard|321786300|159543700|87e3bc2d-1c1e-430c-885b-39b981dd31c3|00000000-0000-0000-0000-000000000000",
@@ -149,7 +147,7 @@
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [

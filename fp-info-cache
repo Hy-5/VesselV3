@@ -1,4 +1,4 @@
-24676551733568728
+24700469083971834
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70392,6 +70392,13 @@ alps tht dip DP3T
 8
 8
 PCM_marbastlib-various
+SW_T1A2QR
+12V 50mA SMD pushbutton, available at LCSC/JLCPCB (C100056)
+SMD pushbutton
+0
+4
+2
+PCM_marbastlib-various
 SW_kailh_big_1u
 Footprint for Kailh "Big Switch Series" style switches
 
@@ -70450,21 +70457,21 @@ mousebites hex
 PCM_marbastlib-various
 nRF52840_holyiot_18010
 Module containing a nRF52840 and most passives and antenna
-holyiot 18010 bluetooth low energy 
+holyiot 18010 nRF52840 bluetooth low energy 
 0
 55
 55
 PCM_marbastlib-various
 nRF52840_holyiot_18010_HS_simple
 Module containing a nRF52840 and most passives and antenna, with only hand solderable pads
-holyiot 18010 bluetooth low energy 
+holyiot 18010 nRF52840 bluetooth low energy 
 0
 37
 37
 PCM_marbastlib-various
 nRF52840_moko_mk08
-
-
+Module containing a nRF52840 and most passives and antenna
+moko mk08a mk08b nRF52840 bluetooth low energy 
 0
 60
 58
@@ -71645,23 +71652,37 @@ stm32 arm wireless bluetooth low energy ble zigbee
 86
 86
 PCM_marbastlib-xp-various
+nRF52840_E73-2G4M08S1C
+Module containing a nRF52840 and most passives and antenna
+ebyte e73 2G4M08S1C nRF52840 bluetooth low energy 
+0
+43
+43
+PCM_marbastlib-xp-various
+nRF52840_E73-2G4M08S1C_simple
+Module containing a nRF52840 and most passives and antenna
+ebyte e73 2G4M08S1C nRF52840 bluetooth low energy 
+0
+28
+28
+PCM_marbastlib-xp-various
 nRF52840_holyiot_18010_HS
 Module containing a nRF52840 and most passives and antenna
-holyiot 18010 bluetooth low energy 
+holyiot 18010 nRF52840 bluetooth low energy 
 0
 55
 55
 PCM_marbastlib-xp-various
 nRF52840_holyiot_18010_HS_all
 Module containing a nRF52840 and most passives and antenna, with a cutout for hand soldering of the bottom IO
-holyiot 18010 bluetooth low energy 
+holyiot 18010 nRF52840 bluetooth low energy 
 0
 55
 55
 PCM_marbastlib-xp-various
 nRF52840_moko_mk08_HS
-
-
+Module containing a nRF52840 and most passives and antenna
+moko mk08a mk08b nRF52840 bluetooth low energy 
 0
 60
 58
@@ -90678,6 +90699,13 @@ Crystal or Oscillator
 2
 2
 SamacSys_Parts
+AZ1084CD50TRG1
+TO252_1
+Integrated Circuit
+0
+3
+3
+SamacSys_Parts
 B74111U0033M060
 B74111U0033M060-1
 Zener Diode
@@ -90735,7 +90763,7 @@ Capacitor
 2
 SamacSys_Parts
 CAPC2012X75N
-CL21C100CBANNNC
+0805
 Capacitor
 0
 2
@@ -90743,6 +90771,13 @@ Capacitor
 SamacSys_Parts
 CAPC2012X95N
 0805 (CL21) 0.95T
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPC2012X135N
+0805 1.35T
 Capacitor
 0
 2
@@ -90786,6 +90821,13 @@ SamacSys_Parts
 ERJ6ENF1000V
 ERJ6EN
 Resistor
+0
+2
+2
+SamacSys_Parts
+FUSC4632X110N
+0ZCG SERIES
+Fuse
 0
 2
 2
@@ -90881,6 +90923,13 @@ Integrated Circuit
 7
 7
 SamacSys_Parts
+PMEG2010ER115
+CFP3  (SOD123W)
+Schottky Diode
+0
+2
+2
+SamacSys_Parts
 PMEG3005AESFYL
 SOD962-2
 Diode ESD (Bi-directional)
@@ -90901,6 +90950,13 @@ Integrated Circuit
 0
 33
 33
+SamacSys_Parts
+QFN50P700X700X60-49N-D
+UFQFPN48
+Integrated Circuit
+0
+49
+49
 SamacSys_Parts
 QFP50P1200X1200X160-64N
 LQFP64_a
@@ -90959,8 +91015,15 @@ Switch
 4
 SamacSys_Parts
 SODFL3517X110N
-SOD123W
+CFP3 (SOD123W)
 Schottky Diode
+0
+2
+2
+SamacSys_Parts
+SODFL3618X108N
+SMF6.0CA---
+TVS Diode (Bi-directional)
 0
 2
 2
@@ -90979,6 +91042,13 @@ Integrated Circuit
 9
 9
 SamacSys_Parts
+SOP50P490X110-10N
+DGD0506AM10-MSOP-10
+Integrated Circuit
+0
+10
+10
+SamacSys_Parts
 SOP65P640X120-14N
 PW (R-PDSO-G14)
 Integrated Circuit
@@ -90986,12 +91056,26 @@ Integrated Circuit
 14
 14
 SamacSys_Parts
+SOP65P640X120-16N
+PW0016A
+Integrated Circuit
+0
+16
+16
+SamacSys_Parts
 SOT65P212X110-5N
 SOT353-1
 Integrated Circuit
 0
 5
 5
+SamacSys_Parts
+SOT95P230X110-3N
+SOT23  (TO-236AB)
+Transistor BJT PNP
+0
+3
+3
 SamacSys_Parts
 SOT95P280X100-6N
 TSOT26_
@@ -91006,6 +91090,13 @@ Diode
 0
 6
 6
+SamacSys_Parts
+SOT95P282X130-5N
+SOT-23-5
+Integrated Circuit
+0
+5
+5
 SamacSys_Parts
 SOTFL50P160X60-8N
 DRL0008A

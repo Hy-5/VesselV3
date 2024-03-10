@@ -27,14 +27,14 @@
 #define USB_SUSPEND_WAKEUP_DELAY 0
 #define F_SCL 400000L
 #define DEBOUNCE 10
-#define BACKLIGHT_PIN A5
+// #define BACKLIGHT_PIN A5
 
 // Define direct key switches (not in matrix)
 // Rotary encoder push button
 #define KC_ENCODER_PUSH B2
 // Boot0 & NRST (for DFU)
-#define KC_BOOT0 B4
-#define KC_NRST B3
+// #define KC_BOOT0 B4
+// #define KC_NRST B3
 
 
 #define BOOTMAGIC_ROW 0
@@ -43,22 +43,27 @@
 
 // RGB Config
 
+//#define DRIVER_LED_TOTAL 102
+//#define RGB_MATRIX_LED_COUNT 102
+
 #define WS2812_DRIVER bitbang
 #define WS2812_DI_PIN A5
+#define RGBLIGHT RGBLIGHT_WS2812
 //#define RGBLED_NUM 1
 #define RGBLIGHT_LED_COUNT 102
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 #define RGBLIGHT_LIMIT_VAL 60
+// #define WS2812_EXTERNAL_PULLUP
 
 #define RGBLIGHT_DEFAULT_VAL 40
 #define RGBLIGHT_DEFAULT_ON true
 
 // Updated timings from WS2812B 2020 datasheet
-#define WS2812_TIMING 2000 // in nano-seconds. Total time for each bit (equals to TH+TL). TLs (T0L and T1L are not set here as they are calculated automatically by QMK. Eg: Timing=T0H+T1H or T1L+T0L)
-#define WS2812_T0H 220 // in nano-seconds. Time driven high for logical 0
-#define WS2812_T1H 580 // in nano-seconds. Time driven high for logical 1
+#define WS2812_TIMING 1250 // in nano-seconds. Total time for each bit (equals to TH+TL). TLs (T0L and T1L are not set here as they are calculated automatically by QMK. Eg: Timing=T0H+T1H or T1L+T0L)
+#define WS2812_T0H 450 // in nano-seconds. Time driven high for logical 0
+#define WS2812_T1H 800 // in nano-seconds. Time driven high for logical 1
 #define WS2812_TRST_US 300 // in micro-seconds. time driven (low?) for reset. Should be above 280us
 #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
 // Other timings (T0L and T1L) derived automatically by QMK, no need to set them

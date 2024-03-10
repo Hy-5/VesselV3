@@ -57,11 +57,6 @@ SHOULD WORK with new name modes but for some reason won't compile unless I give 
 |       42        | RGBLIGHT_MODE_TWINKLE + 5         |
 |-----------------|-----------------------------------|
  *****/
- 
-enum dfu_keycodes{
-    KC_BOOT0_HIGH = SAFE_RANGE,
-    KC_NRST_LOW,
-};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      
@@ -147,21 +142,7 @@ void matrix_scan_user(void) {
     }
 }
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case KC_BOOT0_HIGH:
-            if (record->event.pressed) {
-                writePinHigh(B4); // Driving BOOT0 pin high while pressed (not toggle, keep button pressed)
-            }
-            return false; // Inactive when button released. Back to being low (pull down)
-
-        case KC_NRST_LOW:
-            if (record->event.pressed) {
-                writePinLow(B3); // Driving NRST pin low when pressed
-            }
-            return false; // Inactive when button released. Back to being high (pull up)
-    }
-    
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {    
       // If console is enabled, it will print the matrix position and status of each key pressed
     #ifdef CONSOLE_ENABLE
         uprintf("KL: kc: 0x%04X, row: %2u, col: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.row, record->event.key.col, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);

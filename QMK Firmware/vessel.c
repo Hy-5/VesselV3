@@ -6,6 +6,4 @@
 // Setting output pins
 void keyboard_pre_init_user(void) {
   setPinOutput(A5); // RGBPIN
-  setPinOutput(B3); // MCUNRST
-  setPinOutput(B4); // MCUBOOT0
 }

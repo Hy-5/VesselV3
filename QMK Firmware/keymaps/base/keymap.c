@@ -152,7 +152,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         uprintf("RGB init with %d LEDs\n", RGBLIGHT_LED_COUNT);
     #endif*/
         // Check if the key at row 0, col 11 is pressed or released
-    if (record->event.key.row == 0 && record->event.key.col == 11) {
+    /*if (record->event.key.row == 0 && record->event.key.col == 11) {
         if (record->event.pressed) {
             // When the key is pressed, set pin A5 high
             setPinOutput(A5);
@@ -163,7 +163,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             writePinLow(A5);
             uprintf("Pin A5 set low\n");
         }
-    }
+    }*/
 
     return true;
 }
@@ -175,6 +175,6 @@ void keyboard_post_init_user(void) {
     // Set RGB to a desired starting state:
     rgblight_enable(); // Enables RGB, without saving settings
     rgblight_mode(35); // Sets the mode to static light
-    rgblight_sethsv(HSV_WHITE); // Sets the color to white; replace with desired color
+    // rgblight_sethsv(HSV_WHITE); // Sets the color to white; replace with desired color
     // Additional customization can go here
 }

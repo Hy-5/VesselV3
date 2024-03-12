@@ -1,30 +1,37 @@
 # This file intentionally left blank
 
-#MCU
+# ---MCU---
 MCU = STM32F446
 
-# Bootloader selection
+# ---Bootloader selection---
 BOOTLOADER = stm32-dfu
 BOOTMAGIC_ENABLE = yes
 
+# ---Basics---
 PROGRAMMABLE_BUTTON_ENABLE = yes
-CONSOLE_ENABLE = yes
-#DEBUG_ENABLE = yes
-
-
-# VIA compatibility
-# VIA_ENABLE = yes
 LTO_ENABLE = yes
 NKRO_ENABLE = yes
-# NK_ON = yes
 EXTRAKEY_ENABLE = yes
-RGBLIGHT_ENABLE = yes
-RGBLIGHT_ANIMATIONS  = yes
+# ---Below Option, if set to "vendor" would save data to internal EEPROM when available, if not, acts as "transient" (fake eeprom discarded when turned off). STM32F446 only works on transient as it does not have EEPROM---
+EEPROM_DRIVER = transient
+# ---Below option commented out because only useful if want to turn on nkro when pressing a button (double check)---
+# NK_ON = yes
+
+# ---OLED---
 OLED_ENABLE = yes
 OLED_DRIVER = ssd1306
 OLED_TRANSPORT = i2c
-EEPROM_DRIVER = transient
-# WS2812_DRIVER_REQUIRED = yes
+
+# ---RGB---
+RGBLIGHT_ENABLE = yes
+RGBLIGHT_ANIMATIONS  = yes
 WS2812_DRIVER = bitbang
-# RGB_MATRIX_ENABLE = yes
-# RGB_MATRIX_DRIVER = ws2812
+
+# --- MISC ---
+# VIA compatibility
+# VIA_ENABLE = yes
+
+
+# ---Debugging solutions---
+# CONSOLE_ENABLE = yes
+# DEBUG_ENABLE = yes

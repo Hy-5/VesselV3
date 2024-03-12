@@ -174,7 +174,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 void keyboard_post_init_user(void) {
     // Set RGB to a desired starting state:
     rgblight_enable(); // Enables RGB, without saving settings
-    rgblight_mode(35); // Sets the mode to static light
+    rgblight_mode(6); // Sets the mode to static light
     // rgblight_sethsv(HSV_WHITE); // Sets the color to white; replace with desired color
     // Additional customization can go here
+    
+    // Initialize OLED
+    oled_init(OLED_ROTATION_0); // OLED_ROTATION_180 if flipping the display
 }

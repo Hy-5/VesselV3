@@ -27,12 +27,11 @@
 #define USB_SUSPEND_WAKEUP_DELAY 0
 #define F_SCL 400000L
 #define DEBOUNCE 10
-// #define BACKLIGHT_PIN A5
 
 // Define direct key switches (not in matrix)
 // Rotary encoder push button
 #define KC_ENCODER_PUSH B2
-// Boot0 & NRST (for DFU)
+// Boot0 & NRST (for DFU) (Not useful anymore since row0/col12 pressed before plugging in launches bootmagic and goes to DFU bootloader mode)
 // #define KC_BOOT0 B4
 // #define KC_NRST B3
 
@@ -42,27 +41,33 @@
 
 
 // RGB Config
-
-//#define DRIVER_LED_TOTAL 102
-//#define RGB_MATRIX_LED_COUNT 102
-
 #define WS2812_DRIVER bitbang
 #define WS2812_DI_PIN A5
 #define RGBLIGHT RGBLIGHT_WS2812
-//#define RGBLED_NUM 1
 #define RGBLIGHT_LED_COUNT 102
 #define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 17
-#define RGBLIGHT_VAL_STEP 17
+#define RGBLIGHT_SAT_STEP 10
+#define RGBLIGHT_VAL_STEP 10
 #define RGBLIGHT_LIMIT_VAL 60
-// #define WS2812_EXTERNAL_PULLUP
-
+#define RGBLIGHT_DEFAULT_MODE 6
 #define RGBLIGHT_DEFAULT_VAL 40
 #define RGBLIGHT_DEFAULT_ON true
 
+// RGB Modes
+// #define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+// #define RGBLIGHT_MODE_STATIC_LIGHT
+// #define RGBLIGHT_MODE_BREATHING
+// #define RGBLIGHT_MODE_SNAKE
+// #define RGBLIGHT_MODE_KNIGHT
+// #define RGBLIGHT_MODE_CHRISTMAS
+// #define RGBLIGHT_MODE_STATIC_GRADIENT
+// #define RGBLIGHT_MODE_ALTERNATING
+// #define RGBLIGHT_MODE_TWINKLE
+
 // Updated timings from WS2812B 2020 datasheet
-#define WS2812_TIMING 1250 // in nano-seconds. Total time for each bit (equals to TH+TL). TLs (T0L and T1L are not set here as they are calculated automatically by QMK. Eg: Timing=T0H+T1H or T1L+T0L)
-#define WS2812_T0H 450 // in nano-seconds. Time driven high for logical 0
+#define WS2812_TIMING 1100 // in nano-seconds. Total time for each bit (equals to TH+TL). TLs (T0L and T1L are not set here as they are calculated automatically by QMK. Eg: Timing=T0H+T1H or T1L+T0L)
+#define WS2812_T0H 300 // in nano-seconds. Time driven high for logical 0
 #define WS2812_T1H 800 // in nano-seconds. Time driven high for logical 1
 #define WS2812_TRST_US 300 // in micro-seconds. time driven (low?) for reset. Should be above 280us
 #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
@@ -75,10 +80,10 @@
 #define OLED_IC OLED_IC_SSD1306
 #define OLED_MATRIX_SIZE 1024
 #define OLED_BRIGHTNESS 128
-#define OLED_FADE_OUT
-#define OLED_FADE_OUT_INTERVAL 5
-#define OLED_SCROLL_TIMEOUT 90000
-#define OLED_TIMEOUT 180000
+// #define OLED_FADE_OUT
+// #define OLED_FADE_OUT_INTERVAL 5
+// #define OLED_SCROLL_TIMEOUT 90000
+// #define OLED_TIMEOUT 180000
 
 
 

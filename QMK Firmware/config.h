@@ -30,7 +30,10 @@
 
 // Define direct key switches (not in matrix)
 // Rotary encoder push button
+#define ENCODERS_PAD_A { A15 }
+#define ENCODERS_PAD_B { B10 }
 #define KC_ENCODER_PUSH B2
+#define ENCODER_RESOLUTION 4
 // Boot0 & NRST (for DFU) (Not useful anymore since row0/col12 pressed before plugging in launches bootmagic and goes to DFU bootloader mode)
 // #define KC_BOOT0 B4
 // #define KC_NRST B3
@@ -48,9 +51,9 @@
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 10
 #define RGBLIGHT_VAL_STEP 10
-#define RGBLIGHT_LIMIT_VAL 60
 #define RGBLIGHT_DEFAULT_MODE 6
-#define RGBLIGHT_DEFAULT_VAL 40
+#define RGBLIGHT_LIMIT_VAL 120
+#define RGBLIGHT_DEFAULT_VAL 100
 #define RGBLIGHT_DEFAULT_ON true
 
 // RGB Modes

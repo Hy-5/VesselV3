@@ -57,6 +57,11 @@ SHOULD WORK with new name modes but for some reason won't compile unless I give 
 |       42        | RGBLIGHT_MODE_TWINKLE + 5         |
 |-----------------|-----------------------------------|
  *****/
+ 
+ enum custom_keycodes {
+    OLED_TOG = SAFE_RANGE, // Custom keycode for toggling OLED
+};
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      
@@ -84,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      
         [0] = LAYOUT_all(
         KC_F13,           KC_F14,   KC_F15,   KC_F16,   KC_F17,   KC_F18,   KC_F19,   KC_F20,   KC_F21,   KC_F22,   KC_F23,  KC_F24,     KC_MPRV, KC_MPLY, KC_MNXT,
-        KC_ESC,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,     KC_PSCR, PB_1, TO(1),
+        KC_ESC,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,     KC_PSCR, PB_1, OLED_TOG,
         KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC,    KC_HOME, KC_END,
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_ENT,     KC_INS,  KC_PGUP,
         KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_NUHS,             KC_DEL,  KC_PGDN,
@@ -95,14 +100,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 #if defined(ENCODER_MAP_ENABLE)
-        const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-            [0] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
-            [1] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }
-        };
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) {
+        if (clockwise) {
+            uprintf("Encoder turned clockwise\n");
+            tap_code(KC_VOLU); // Example action
+        } else {
+            uprintf("Encoder turned counter-clockwise\n");
+            tap_code(KC_VOLD); // Example action
+        }
+    }
+    return true;
+}
 #endif
 
 #ifdef OLED_ENABLE
 bool oled_task_user(void) {
+    if (!is_oled_on()) return false; // Add this line to exit early if the OLED is off
     //Drawing position set to grid start
     oled_set_cursor(0,1);
     
@@ -112,9 +126,6 @@ bool oled_task_user(void) {
     switch (get_highest_layer(layer_state)) {
         case 0:
             oled_write_P(PSTR("Default\n"), false);
-            break;
-        case 1:
-            oled_write_P(PSTR("FN\n"), false);
             break;
         default:
             // Or use the write_ln shortcut over adding '\n' to the end of your string
@@ -135,35 +146,39 @@ void matrix_scan_user(void) {
     if (readPin(KC_ENCODER_PUSH) == 0) {
         if (encoder_button_state == 0) {
             encoder_button_state = 1;
-            tap_code(KC_MPLY); // Change later. Currently set to music play/pause for testing
+            tap_code(KC_MPLY); // Example action
+            uprintf("Encoder button pressed\n");
         }
-    } else {
+    } else if (encoder_button_state == 1) {
         encoder_button_state = 0;
+        uprintf("Encoder button released\n");
     }
 }
+
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {    
       // If console is enabled, it will print the matrix position and status of each key pressed
     #ifdef CONSOLE_ENABLE
         uprintf("KL: kc: 0x%04X, row: %2u, col: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.row, record->event.key.col, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
     #endif
-    // DEBUG
-    /*#ifdef DEBUG_ENABLE
-        uprintf("RGB init with %d LEDs\n", RGBLIGHT_LED_COUNT);
-    #endif*/
-        // Check if the key at row 0, col 11 is pressed or released
-    /*if (record->event.key.row == 0 && record->event.key.col == 11) {
-        if (record->event.pressed) {
-            // When the key is pressed, set pin A5 high
-            setPinOutput(A5);
-            writePinHigh(A5);
-            uprintf("Pin A5 set high\n");
-        } else {
-            // When the key is released, set pin A5 low
-            writePinLow(A5);
-            uprintf("Pin A5 set low\n");
-        }
-    }*/
+    
+    
+    // To toggle OLED on or off when pressing LEFT_CTRL+Layer button (row1, col16)
+    static uint8_t mod_state; // Variable to hold the state of modifiers
+    switch (keycode) {
+        case OLED_TOG:
+            if (record->event.pressed) {
+                mod_state = get_mods(); // Save the modifiers state
+                if (mod_state & MOD_MASK_CTRL) { // Check if any Control key is pressed
+                    if (is_oled_on()) {
+                        oled_off();
+                    } else {
+                        oled_on();
+                    }
+                }
+            }
+            return false;
+    }
 
     return true;
 }
@@ -172,6 +187,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 
 void keyboard_post_init_user(void) {
+    // Delay for OLED power stabilization (Otherwise OLED won't start on cold boot (when unplugged and plugged back in) and will only work after being flashed and after pc reboot)
+    wait_ms(100);
     // Set RGB to a desired starting state:
     rgblight_enable(); // Enables RGB, without saving settings
     rgblight_mode(6); // Sets the mode to static light
@@ -180,4 +197,5 @@ void keyboard_post_init_user(void) {
     
     // Initialize OLED
     oled_init(OLED_ROTATION_0); // OLED_ROTATION_180 if flipping the display
+    oled_on();
 }

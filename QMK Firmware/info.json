@@ -5,14 +5,7 @@
     "bootloader": "stm32-dfu",
     "diode_direction": "COL2ROW",
     "features": {
-        "command": false,
-        "encoder": true
-    },
-    "encoder": {
-        "enabled": true,
-        "rotary": [
-            {"pin_a": "A15", "pin_b": "B10", "resolution": 4}
-        ]
+        "command": false
     },
     "matrix_pins": {
         "cols": ["C10", "C14", "C11", "B8", "C1", "B9", "A1", "A2", "D2", "C12", "C6", "C7", "B12", "B13", "C9", "A8", "A9"],

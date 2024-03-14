@@ -22,6 +22,9 @@ OLED_ENABLE = yes
 OLED_DRIVER = ssd1306
 OLED_TRANSPORT = i2c
 
+# ---Rotary Encoder---
+ENCODER_ENABLE = yes
+
 # ---RGB---
 RGBLIGHT_ENABLE = yes
 RGBLIGHT_ANIMATIONS  = yes

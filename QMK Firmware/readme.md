@@ -1,8 +1,8 @@
 # vessel
 
-![RgbOFF](https://imgur.com/FRUoYkK)
+![RgbOFF](https://i.imgur.com/FRUoYkK.jpg)
 
-![RgbON](https://imgur.com/oUoma1y)
+![RgbON](https://i.imgur.com/oUoma1y.jpg)
 
 *ISO-FR 75-ish keyboard with I2C OLED, RGB (WS2812B-2020) and rotary encoder*
 

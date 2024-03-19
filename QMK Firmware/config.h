@@ -18,14 +18,15 @@
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 #define NO_ACTION_ONESHOT
-#define MATRIX_IO_DELAY 30
+#define MATRIX_IO_DELAY 20
 #define LOCKING_SUPPORT_ENABLE
 #define IS_COMMAND() (get_mods() == MOD_MASK_SHIFT)
 #define USB_MAX_POWER_CONSUMPTION 495
-#define USB_POLLING_INTERVAL_MS 1
+#define USB_POLLING_INTERVAL_MS 2
 #define USB_SUSPEND_WAKEUP_DELAY 0
 #define F_SCL 400000L
-#define DEBOUNCE 10
+#define DEBOUNCE 12
+#define TAPPING_TERM 185
 
 // Define direct key switches (not in matrix)
 // Rotary encoder push button

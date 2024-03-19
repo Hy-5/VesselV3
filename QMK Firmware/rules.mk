@@ -8,6 +8,7 @@ BOOTLOADER = stm32-dfu
 BOOTMAGIC_ENABLE = yes
 
 # ---Basics---
+DEBOUNCE_TYPE = sym_eager_pk
 PROGRAMMABLE_BUTTON_ENABLE = yes
 LTO_ENABLE = yes
 NKRO_ENABLE = yes

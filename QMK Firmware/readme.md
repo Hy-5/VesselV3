@@ -1,16 +1,12 @@
 # vessel
 
-![RgbOFF](https://i.imgur.com/FRUoYkK.jpg)
+![vessel](imgur.com image replace me!)
 
-![RgbON](https://i.imgur.com/oUoma1y.jpg)
-
-*ISO-FR 75-ish keyboard with I2C OLED, RGB (WS2812B-2020) and rotary encoder*
+*A short description of the keyboard/project*
 
 * Keyboard Maintainer: [Ismael Coulibaly](https://github.com/Hy-5)
-* Hardware Supported: *STM32F446RET6TR*
-
-
-[WIP]
+* Hardware Supported: *The PCBs, controllers supported*
+* Hardware Availability: *Links to where you can find this hardware*
 
 Make example for this keyboard (after setting up your build environment):
 

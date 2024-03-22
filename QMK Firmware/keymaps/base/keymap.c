@@ -4,6 +4,7 @@
 #include QMK_KEYBOARD_H
 #include "keymap_french.h"
 #include "print.h"
+#include "timer.h"
 
 
 /***** rgblight_mode(mode)/rgblight_mode_noeeprom(mode) ****
@@ -57,6 +58,8 @@ SHOULD WORK with new name modes but for some reason won't compile unless I give 
 |       42        | RGBLIGHT_MODE_TWINKLE + 5         |
 |-----------------|-----------------------------------|
  *****/
+ 
+ static uint32_t keyboard_idle_timer = 0;
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -148,6 +151,13 @@ void matrix_scan_user(void) {
         encoder_button_state = 0;
         uprintf("Encoder button released\n");
     }
+    
+    //Turn RGB off when not in use
+    if (timer_elapsed(keyboard_idle_timer) > 300000) { // 5 minutes
+        if (rgblight_is_enabled()) {
+            rgblight_disable();
+        }
+    }
 }
 
 
@@ -156,6 +166,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     #ifdef CONSOLE_ENABLE
         uprintf("KL: kc: 0x%04X, row: %2u, col: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.row, record->event.key.col, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
     #endif
+    
+    // Turn RGB on when a key is pressed
+    if (record->event.pressed) {
+        keyboard_idle_timer = timer_read();
+        if (!rgblight_is_enabled()) {
+            rgblight_enable();
+        }
+    }
+    return true;
 
     return true;
 }

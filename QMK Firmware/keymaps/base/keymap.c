@@ -153,7 +153,7 @@ void matrix_scan_user(void) {
     }
     
     //Turn RGB off when not in use
-    if (timer_elapsed(keyboard_idle_timer) > 300000) { // 5 minutes
+    if (timer_elapsed32(keyboard_idle_timer) > 300000) { // 5 minutes
         if (rgblight_is_enabled()) {
             rgblight_disable();
         }
@@ -169,7 +169,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     
     // Turn RGB on when a key is pressed
     if (record->event.pressed) {
-        keyboard_idle_timer = timer_read();
+        keyboard_idle_timer = timer_read32();
         if (!rgblight_is_enabled()) {
             rgblight_enable();
         }

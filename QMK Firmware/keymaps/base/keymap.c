@@ -1051,9 +1051,6 @@ bool oled_task_user(void) {
             // Caps Lock was on but now is off, clear the OLED or resume animation
             caps_lock_was_on = false; // Update the flag
             animation_enabled=true;
-            // Clearing the OLED here might not be necessary if your animation function already refreshes the entire display
-            // oled_clear(); // Consider clearing if your animation doesn't cover the whole screen
-            // Return true here if you clear the screen or need to immediately update the display
         }
 
     }
@@ -1097,8 +1094,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             rgblight_enable();
         }
     }
-    return true;
-
     return true;
 }
 

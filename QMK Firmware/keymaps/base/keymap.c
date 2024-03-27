@@ -59,6 +59,7 @@ SHOULD WORK with new name modes but for some reason won't compile unless I give 
 |-----------------|-----------------------------------|
  *****/
  
+// custom keycode example
 /*enum custom_keycodes {
     PB_1 = SAFE_RANGE, // Ensure this doesn't conflict with existing keycodes
     // Other custom keycodes can follow

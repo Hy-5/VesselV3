@@ -6,7 +6,7 @@
 
 *ISO-FR 75-ish keyboard with I2C OLED, RGB (WS2812B-2020) and rotary encoder*
 
-* Keyboard Maintainer: [Ismael Coulibaly](https://github.com/Hy-5)
+* Keyboard Maintainer: [Hy-5 (Ismael Coulibaly)](https://github.com/Hy-5)
 * Hardware Supported: *STM32F446RET6TR*
 
 
@@ -14,18 +14,23 @@
 
 Make example for this keyboard (after setting up your build environment):
 
-    make vessel:default
+    qmk compile -kb vessel -km base 2>&1 | ts '%Y-%m-%d %H:%M:%S
 
 Flashing example for this keyboard:
 
-    make vessel:default:flash
+    A - Initial flashing
+        1 - Bridge "boot0 to 3v3_1" solder jumper to pull boot0 high
+        2 - Desolder logic level shifter to keep boot1 pin low
+        3 - Plug in the keyboard, it will boot in dfu bootloader mode
+        4 - Use whatever program you prefer, QMK Toolbox, STM32 Programmer, STLink V2 etc.
+    B - After initial flashing
+        1 - Keep M12 button (row0, col11) pressed while plugging in the keyboard to launch in bootloader mode
+        2 - Use QMK Toolbox for flashing
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
 ## Bootloader
 
-Enter the bootloader in 3 ways:
+Enter the bootloader in 1 way:
 
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+* **Bootmagic reset**: Hold down the M12 key at (0,11) in the matrix and plug in the keyboard

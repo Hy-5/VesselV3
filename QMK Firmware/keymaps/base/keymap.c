@@ -59,6 +59,12 @@ SHOULD WORK with new name modes but for some reason won't compile unless I give 
 |-----------------|-----------------------------------|
  *****/
  
+/*enum custom_keycodes {
+    PB_1 = SAFE_RANGE, // Ensure this doesn't conflict with existing keycodes
+    // Other custom keycodes can follow
+};*/
+
+ 
  static uint32_t keyboard_idle_timer = 0;
 
 
@@ -122,12 +128,13 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 uint32_t timer = 0;
 uint8_t current_frame = 0;
 static bool animation_enabled = true;
+uint32_t anim_timer = 0;
+static uint32_t anim_off_timer = 0;
+
 
 // animation rendering
 bool animation_on(void) {
-    if (!animation_enabled){
-        return false;
-    }
+    if (!animation_enabled) return false; // Exit if animation is disabled
         // 'frame_0_delay-0', 128x64px
         static const char epd_bitmap_frame_0_delay_0 [] PROGMEM = {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -843,16 +850,18 @@ bool animation_on(void) {
 
         // Run animation
         if (timer_elapsed(timer) > FRAME_DURATION) {
-            // Set timer to updated time
-            timer = timer_read();
-            
-            // Increment frame
+            timer = timer_read(); // Reset timer for next frame
             current_frame = (current_frame + 1) % (sizeof(epd_bitmap_allArray) / sizeof(epd_bitmap_allArray[0]));
+            oled_write_raw_P(epd_bitmap_allArray[current_frame], frame_sizes[current_frame]);
 
-            // Draw frame to OLED
-            oled_write_raw_P(epd_bitmap_allArray[current_frame], frame_sizes[current_frame]); 
+        if (timer_elapsed32(anim_timer) > 600000) {
+            // Animation ran for 5 seconds, stop and set off timer
+            animation_enabled = false;
+            oled_clear(); // Optionally clear the display or set a standby image
+            anim_off_timer = timer_read32(); // Start off timer
         }
-    return false;
+    }
+    return true;
 }
     
     
@@ -860,16 +869,16 @@ bool oled_task_user(void) {
     if (!is_oled_on()) return false; // exit early if the OLED is off
 
     // run animation at startup
-    animation_on();
+    // animation_on();
     
-    static bool caps_lock_was_on = false; // Keep track of the caps lock state
     bool caps_lock_is_on = host_keyboard_led_state().caps_lock;
+    static bool caps_lock_was_on = false; // Keep track of the caps lock state
     
-    if (caps_lock_is_on) {
-        if (!caps_lock_was_on) {
-            // Caps Lock is on, show the padlock image
-            caps_lock_was_on = true; // Update the flag
-            animation_enabled=false;
+    if (caps_lock_is_on != caps_lock_was_on) {
+        caps_lock_was_on = caps_lock_is_on;
+        if (caps_lock_is_on) {
+            animation_enabled = false;
+            oled_clear();
             static const unsigned char PROGMEM caps_active[] = {
                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -1044,18 +1053,33 @@ bool oled_task_user(void) {
                 0x00, 0x00, 0x00, 0x00,
             };
             oled_write_raw_P((const char *)caps_active, sizeof(caps_active));
-            return true; // Indicate that the display content has changed
-        }
     } else {
-        if (caps_lock_was_on) {
+            //if (timer_elapsed32(anim_timer) < 5000) {
             // Caps Lock was on but now is off, clear the OLED or resume animation
-            caps_lock_was_on = false; // Update the flag
+            //caps_lock_was_on = false; // Update the flag
+            oled_clear();
             animation_enabled=true;
-        }
-
+            //return true;
     }
-    return animation_on() || !caps_lock_is_on;
-    return false;
+    //caps_lock_was_on = caps_lock_is_on; // Update state
+    return true; // Skip further processing in this cycle
+    }
+    
+    // Handle animation timing and control
+    if (!animation_enabled && timer_elapsed32(anim_off_timer) > 1800000) {
+        // Restart animation after 10-second off period
+        animation_enabled = true;
+        anim_timer = timer_read32(); // Reset animation timer
+        anim_off_timer = 0; // Clear off timer to avoid immediate restarts
+        current_frame = 0; // Reset to the first frame
+    }
+
+    // Run or resume animation if enabled
+    if (animation_enabled) {
+        animation_on();
+    }
+
+    return true;            
 }
 #endif
 
@@ -1072,10 +1096,11 @@ void matrix_scan_user(void) {
         //uprintf("Encoder button released\n");
     }
     
-    //Turn RGB off when not in use
+    //Turn RGB and OLED off when not in use
     if (timer_elapsed32(keyboard_idle_timer) > 300000) { // 5 minutes
         if (rgblight_is_enabled()) {
             rgblight_disable();
+            oled_off();
         }
     }
 }
@@ -1087,11 +1112,40 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         uprintf("KL: kc: 0x%04X, row: %2u, col: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.row, record->event.key.col, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
     #endif
     
+    switch (keycode) {
+        case PB_1:
+            if (record->event.pressed) {
+                if (!animation_enabled){
+                    // Code to reset timers and initialize OLED as if the keyboard just started
+                    keyboard_idle_timer = timer_read32(); // Reset idle timer
+                    // Reset animation timers
+                    anim_timer = timer_read32();
+                    anim_off_timer = 0; // Clear off timer to ensure animation starts
+                    animation_enabled = true; // Enable animation
+                    current_frame = 0; // Start from the first frame
+                    // Optionally, you might want to clear the OLED and restart the animation directly
+                    oled_clear();
+                    animation_on(); // Start the animation immediately
+                    // Any additional initialization as performed in keyboard_post_init_user or similar
+                }
+                else{
+                    animation_enabled = false;
+                    oled_clear();
+                    anim_off_timer = 0;
+                    current_frame = 0;
+                    }
+            }
+            return false; // Skip further processing to avoid standard keycode processing
+    }
+    
     // Turn RGB on when a key is pressed
     if (record->event.pressed) {
         keyboard_idle_timer = timer_read32();
         if (!rgblight_is_enabled()) {
             rgblight_enable();
+        }
+        if (!is_oled_on()) {
+            oled_on();
         }
     }
     return true;
@@ -1123,6 +1177,12 @@ void keyboard_post_init_user(void) {
     // rgblight_sethsv(HSV_WHITE); // Sets the color to static white; To replace later
     
     // Initialize OLED
+    anim_timer = timer_read32(); // Initialize the animation timer to the current time
+    anim_off_timer = 0; // Ensure the off timer is reset
+
+    // If you have specific setup for the animation, call it here
+    // For example, you might reset the frame counter or perform other setup tasks
+    current_frame = 0;
     oled_init(OLED_ROTATION_0); // OLED_ROTATION_180 if flipping the display
     oled_on();
 }

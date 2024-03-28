@@ -25,6 +25,7 @@ OLED_DRIVER = ssd1306
 OLED_TRANSPORT = i2c
 
 # ---Rotary Encoder---
+ENCODER_MAP_ENABLE = yes
 ENCODER_ENABLE = yes
 
 # ---RGB---
@@ -33,7 +34,7 @@ RGBLIGHT_ANIMATIONS  = yes
 WS2812_DRIVER = bitbang
 
 # --- MISC ---
-# VIA compatibility
+# -VIA compatibility-
 # VIA_ENABLE = yes
 
 

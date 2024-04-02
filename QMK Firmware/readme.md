@@ -33,4 +33,4 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 Enter the bootloader in 1 way:
 
-* **Bootmagic reset**: Hold down the M12 key at (0,11) in the matrix and plug in the keyboard
+* **Bootmagic reset**: Hold down the M12 key at ((row0, col11) in the matrix) and plug in the keyboard

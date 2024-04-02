@@ -64,6 +64,20 @@ enum custom_keycodes {
     KC_PrevDesk = SAFE_RANGE, // Custom keycode for Ctrl+Windows+Left
     KC_NextDesk,              // Custom keycode for Ctrl+Windows+Right
 };
+#if defined (TAP_DANCE_ENABLE)
+// Tap Dance declarations
+enum {
+    TD_M_RC,
+};
+
+// Tap Dance definitions
+tap_dance_action_t tap_dance_actions[] = {
+    // Tap once for Menu, twice for Right Control
+    [TD_M_RC] = ACTION_TAP_DANCE_DOUBLE(KC_APP, KC_RCTL),
+};
+
+
+#endif
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      
@@ -96,7 +110,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_ENT,     KC_INS,  KC_PGUP,
         KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_NUHS,             KC_DEL,  KC_PGDN,
         KC_LSFT, KC_NUBS, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,  KC_UP,              PB_3,
-        KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             KC_RALT, KC_APP,  KC_LEFT, KC_DOWN, KC_RGHT
+        KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             KC_RALT, TD(TD_M_RC), KC_LEFT, KC_DOWN, KC_RGHT
     )
 };
 
@@ -295,7 +309,7 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
         // 'frame_1_delay-0', 128x64px
         static const char epd_bitmap_frame_1_delay_0 [] PROGMEM = {
@@ -469,7 +483,7 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
         // 'frame_2_delay-0', 128x64px
         static const char epd_bitmap_frame_2_delay_0 [] PROGMEM = {
@@ -643,7 +657,7 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
         // 'frame_3_delay-0', 128x64px
         static const char epd_bitmap_frame_3_delay_0 [] PROGMEM = {
@@ -817,7 +831,7 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
         // 'frame_4_delay-0', 128x64px
         static const char epd_bitmap_frame_4_delay_0 [] PROGMEM = {
@@ -991,7 +1005,7 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
         // 'frame_5_delay-0', 128x64px
         static const char epd_bitmap_frame_5_delay_0 [] PROGMEM = {
@@ -1165,7 +1179,7 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
         // 'frame_6_delay-0', 128x64px
         static const char epd_bitmap_frame_6_delay_0 [] PROGMEM = {
@@ -1339,7 +1353,7 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
         // 'frame_7_delay-0', 128x64px
         static const char epd_bitmap_frame_7_delay_0 [] PROGMEM = {
@@ -1513,11 +1527,11 @@ bool animation_on(void) {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-            0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00
         };
 
         // Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 4160)
-        const char* epd_bitmap_allArray[8] = {
+        static const char* epd_bitmap_allArray[8] = {
             epd_bitmap_frame_0_delay_0,
             epd_bitmap_frame_1_delay_0,
             epd_bitmap_frame_2_delay_0,
@@ -1529,7 +1543,7 @@ bool animation_on(void) {
         };
      
         // Frame sizes array
-        uint16_t frame_sizes[8] = {
+        static uint16_t frame_sizes[8] = {
             sizeof(epd_bitmap_frame_0_delay_0),
             sizeof(epd_bitmap_frame_1_delay_0),
             sizeof(epd_bitmap_frame_2_delay_0),
@@ -1738,7 +1752,7 @@ bool oled_task_user(void) {
                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                0x00, 0x00, 0x00, 0x00,
+                0x00, 0x00, 0x00, 0x00
             };
             oled_write_raw_P((const char *)caps_active, sizeof(caps_active));
     } else {
@@ -1774,7 +1788,7 @@ void matrix_scan_user(void) {
         if (encoder_button_state == 0) {
             encoder_button_state = 1;
             register_code(KC_LGUI);
-            tap_code(KC_I);
+            tap_code(KC_TAB);
             unregister_code(KC_LGUI);
             //uprintf("Encoder button pressed\n");
         }
@@ -1803,24 +1817,22 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case PB_1:
             if (record->event.pressed) {
                 if (!animation_enabled){
-                    oled_on();
-                    oled_init(OLED_ROTATION_0);
                     // Trying to reset timers and initialize OLED as if the keyboard just started
                     keyboard_idle_timer = timer_read32(); // Reset idle timer
                     // Reset animation timers
                     anim_timer = timer_read32();
                     anim_off_timer = 0; // Clear off timer to ensure animation starts
-                    animation_enabled = true; // Enable animation
-                    current_frame = 0; // Start from the first frame
                     oled_clear();
+                    animation_enabled = true; // Enable animation
+                    oled_on();
                     animation_on(); // Start the animation immediately
                 }
                 else{
+                    oled_off();
                     animation_enabled = false;
                     oled_clear();
                     anim_off_timer = 0;
-                    current_frame = 0;
-                    oled_off();
+
                     }
             }
             return false;
@@ -1866,7 +1878,6 @@ void suspend_power_down_user(void) {
 
 void suspend_wakeup_init_user(void) {
     // TODO when host computer is back on
-    oled_init(OLED_ROTATION_0);
     oled_on();
     rgblight_enable();
 }

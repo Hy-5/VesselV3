@@ -37,6 +37,8 @@ WS2812_DRIVER = bitbang
 # -VIA compatibility-
 # VIA_ENABLE = yes
 
+# --- Tap Dance ---
+TAP_DANCE_ENABLE = yes
 
 # ---Debugging solutions---
 # CONSOLE_ENABLE = yes

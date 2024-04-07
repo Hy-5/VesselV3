@@ -1,4 +1,4 @@
-# vessel
+# Vessel (rev 1.0)
 
 ![RgbOFF](https://i.imgur.com/sOulPB4.jpg)
 
@@ -20,7 +20,7 @@ Flashing example for this keyboard:
 
     A - Initial flashing
         1 - Bridge "boot0 to 3v3_1" solder jumper to pull boot0 high
-        2 - Desolder logic level shifter to keep boot1 pin low
+        2 - Desolder logic level shifter to keep MCU's boot1 pin (Pin28/PB2) low
         3 - Plug in the keyboard, it will boot in dfu bootloader mode
         4 - Use whatever program you prefer, QMK Toolbox, STM32 Programmer, STLink V2 etc.
     B - After initial flashing

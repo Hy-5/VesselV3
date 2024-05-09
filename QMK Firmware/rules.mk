@@ -29,9 +29,12 @@ ENCODER_MAP_ENABLE = yes
 ENCODER_ENABLE = yes
 
 # ---RGB---
-RGBLIGHT_ENABLE = yes
-RGBLIGHT_ANIMATIONS  = yes
-WS2812_DRIVER = bitbang
+# RGBLIGHT_ENABLE = yes
+# RGBLIGHT_ANIMATIONS  = yes
+# WS2812_DRIVER = bitbang
+
+RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_DRIVER = ws2812
 
 # --- MISC ---
 # -VIA compatibility-
@@ -41,5 +44,5 @@ WS2812_DRIVER = bitbang
 TAP_DANCE_ENABLE = yes
 
 # ---Debugging solutions---
-# CONSOLE_ENABLE = yes
+CONSOLE_ENABLE = yes
 # DEBUG_ENABLE = yes

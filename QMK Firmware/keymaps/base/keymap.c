@@ -129,6 +129,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Animation variables
     uint32_t timer = 0;
     uint8_t current_frame = 0;
+    //static bool animation_enabled = true;
     static bool animation_enabled = true;
     uint32_t anim_timer = 0;
     static uint32_t anim_off_timer = 0;
@@ -3492,6 +3493,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         
         // Run animation
         if (timer_elapsed(timer) > FRAME_DURATION) {
+            /*#ifdef CONSOLE_ENABLE
+                    uprintf("Next frame\n");
+            #endif*/
             timer = timer_read(); // Reset timer for next frame
             current_frame = (current_frame + 1) % (sizeof(epd_bitmap_allArray) / sizeof(epd_bitmap_allArray[0]));
             oled_write_raw_P(epd_bitmap_allArray[current_frame], frame_sizes[current_frame]);
@@ -3515,6 +3519,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         if (caps_lock_is_on != caps_lock_was_on) {
             caps_lock_was_on = caps_lock_is_on;
             if (caps_lock_is_on) {
+                #ifdef CONSOLE_ENABLE
+                    uprintf("Animation enabled is %b\n", animation_enabled);
+                #endif
                 animation_enabled = false;
                 oled_clear();
                 static const unsigned char PROGMEM caps_active[] = {
@@ -3693,6 +3700,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 oled_write_raw_P((const char *)caps_active, sizeof(caps_active));
                 } else {
                 // Caps Lock was on but now is off, clear the OLED and (resume?) animation
+                #ifdef CONSOLE_ENABLE
+                    uprintf("Animation enabled is %b\n", animation_enabled);
+                #endif
                 oled_clear();
                 animation_enabled=true;
                 //return true;
@@ -3702,11 +3712,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         
         // Handle animation timing and control
         if (!animation_enabled && timer_elapsed32(anim_off_timer) > 1800000) {// Restart animation after 30 minutes off period
-            oled_init(OLED_ROTATION_0);
+            //oled_init(OLED_ROTATION_0);
             animation_enabled = true;
             anim_timer = timer_read32(); // Reset animation timer
             anim_off_timer = 0; // Clear off timer to avoid immediate restarts
-            current_frame = 0; // Reset to the first frame
+            //current_frame = 0; // Reset to the first frame
         }
         
         // Run or resume animation if enabled
@@ -3738,7 +3748,8 @@ void matrix_scan_user(void) {
     //Turn RGB and OLED off when not in use
     if (timer_elapsed32(keyboard_idle_timer) > 300000) { // 5 minutes
         if (rgblight_is_enabled()) {
-            rgblight_disable();
+            rgb_matrix_disable();
+            // rgblight_disable();
             oled_off();
         }
     }
@@ -3747,16 +3758,25 @@ void matrix_scan_user(void) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {    
     // Prints matrix position and status key pressed when console is enabled
+    /*#ifdef CONSOLE_ENABLE
+        //uprintf("KL: kc: 0x%04X, row: %2u, col: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.row, record->event.key.col, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
+    #endif*/
     #ifdef CONSOLE_ENABLE
-        uprintf("KL: kc: 0x%04X, row: %2u, col: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.row, record->event.key.col, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
+            if (record->event.pressed) {
+            uint8_t key_row = record->event.key.row;
+            uint8_t key_col = record->event.key.col;
+            uint8_t led_index = g_led_config.matrix_co[key_row][key_col]; // Assuming g_led_config is properly configured
+            uprintf("Key row: %d, col: %d, LED index: %d\n", key_row, key_col, led_index);
+            }
     #endif
+
     
     switch (keycode) {
         case PB_1:
         if (record->event.pressed) {
             if (!animation_enabled){
                 #ifdef CONSOLE_ENABLE
-                    uprintf("Trying to turn it back on");
+                    uprintf("Trying to turn it back on\n");
                 #endif
                 // Trying to reset timers and initialize OLED as if the keyboard just started
                 //keyboard_idle_timer = timer_read32(); // Reset idle timer
@@ -3770,16 +3790,46 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
             else{
                 #ifdef CONSOLE_ENABLE
-                    uprintf("Trying to turn it off");
+                    uprintf("Trying to turn it off\n");
                 #endif
                 animation_enabled = false;
                 oled_clear();
                 anim_off_timer = 0;
-                animation_on();
+                //animation_on();
                 //oled_off();
             }
         }
         return false;
+        
+        case PB_3:
+            if (record->event.pressed) {
+                // Check if Control is held down
+                if (get_mods() & MOD_MASK_CTRL) {
+                    if (get_mods() & MOD_MASK_SHIFT) {
+                    rgblight_increase_sat(); // Ctrl + Shift + PB_3 increases saturation
+                    uprintf("Sat increase\n");
+                } else {
+                    rgblight_decrease_sat(); // Ctrl + PB_3 decreases saturation
+                    uprintf("Sat decrease\n");
+            }
+                }
+            // Check if Alt is held down
+            else if (get_mods() & MOD_MASK_ALT) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    rgblight_increase_hue(); // Alt + Shift + PB_3 increases hue
+                    uprintf("Hue increase\n");
+                } else {
+                    rgblight_decrease_hue(); // Alt + PB_3 decreases hue
+                    uprintf("Hue decrease\n");
+                }
+            }
+            // No modifiers means just toggle RGB mode
+            else {
+                rgblight_step();  // PB_3 cycles through RGB modes
+            }
+        }
+        return false; // Skip all other key processing
+        
         case KC_PrevDesk:
         if (record->event.pressed) {
             register_code(KC_LCTL);
@@ -3804,7 +3854,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
         keyboard_idle_timer = timer_read32();
         if (!rgblight_is_enabled()) {
-            rgblight_enable();
+            rgb_matrix_enable();
+            // rgblight_enable();
         }
         if (!is_oled_on()) {
             oled_init(OLED_ROTATION_0);
@@ -3817,13 +3868,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 void suspend_power_down_user(void) {
     // TODO when host computer is off
     oled_off();
-    rgblight_disable();
+    rgb_matrix_disable();
+    // rgblight_disable();
 }
 
 void suspend_wakeup_init_user(void) {
     // TODO when host computer is back on
     oled_on();
-    rgblight_enable();
+    rgb_matrix_enable();
+    // rgblight_enable();
 }
 
 
@@ -3835,8 +3888,9 @@ void keyboard_post_init_user(void) {
     // Enable NKRO from boot
     keymap_config.nkro = 1;
     // RGB starting state:
-    rgblight_enable();
-    rgblight_mode(6); // Sets the mode to rainbow
+    rgb_matrix_enable();
+    // rgblight_enable();
+    // rgblight_mode(15); // Sets the mode to rainbow
     // rgblight_sethsv(HSV_WHITE); // Sets the color to static white; To replace later
     
     // Initialize OLED

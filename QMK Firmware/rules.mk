@@ -44,5 +44,5 @@ RGB_MATRIX_DRIVER = ws2812
 TAP_DANCE_ENABLE = yes
 
 # ---Debugging solutions---
-CONSOLE_ENABLE = yes
+# CONSOLE_ENABLE = yes
 # DEBUG_ENABLE = yes

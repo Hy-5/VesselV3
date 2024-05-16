@@ -26177,7 +26177,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 748.03 397.51 0)
 			(effects
 				(font
@@ -26862,7 +26862,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 367.03 397.51 0)
 			(effects
 				(font
@@ -27495,7 +27495,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 690.88 421.64 0)
 			(effects
 				(font
@@ -27625,7 +27625,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 548.64 372.11 0)
 			(effects
 				(font
@@ -28494,7 +28494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 454.66 372.11 0)
 			(effects
 				(font
@@ -29313,7 +29313,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 701.04 443.23 0)
 			(effects
 				(font
@@ -29759,7 +29759,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 464.82 298.45 0)
 			(effects
 				(font
@@ -30009,7 +30009,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 36.83 397.51 0)
 			(effects
 				(font
@@ -30546,7 +30546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 788.67 372.11 0)
 			(effects
 				(font
@@ -30973,7 +30973,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 454.66 421.64 0)
 			(effects
 				(font
@@ -31292,7 +31292,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 370.84 298.45 0)
 			(effects
 				(font
@@ -32065,7 +32065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 464.82 347.98 0)
 			(effects
 				(font
@@ -32194,7 +32194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 229.87 298.45 0)
 			(effects
 				(font
@@ -32867,7 +32867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 596.9 421.64 0)
 			(effects
 				(font
@@ -33194,7 +33194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 737.87 372.11 0)
 			(effects
 				(font
@@ -33473,7 +33473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 36.83 347.98 0)
 			(effects
 				(font
@@ -33603,7 +33603,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 312.42 322.58 0)
 			(effects
 				(font
@@ -34166,7 +34166,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 36.83 443.23 0)
 			(effects
 				(font
@@ -34362,7 +34362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 312.42 372.11 0)
 			(effects
 				(font
@@ -34699,7 +34699,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 607.06 298.45 0)
 			(effects
 				(font
@@ -35497,7 +35497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 513.08 347.98 0)
 			(effects
 				(font
@@ -36082,7 +36082,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 513.08 298.45 0)
 			(effects
 				(font
@@ -36581,7 +36581,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 218.44 322.58 0)
 			(effects
 				(font
@@ -37315,7 +37315,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 130.81 397.51 0)
 			(effects
 				(font
@@ -37445,7 +37445,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 548.64 421.64 0)
 			(effects
 				(font
@@ -37720,7 +37720,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 181.61 298.45 0)
 			(effects
 				(font
@@ -38078,7 +38078,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 77.47 421.64 0)
 			(effects
 				(font
@@ -39461,7 +39461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CAPC2012X135N"
+		(property "Footprint" "SamacSys_Parts:CAPC2012X135N"
 			(at 236.55 92.71 0)
 			(effects
 				(font
@@ -40466,7 +40466,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 265.43 322.58 0)
 			(effects
 				(font
@@ -40895,7 +40895,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 77.47 372.11 0)
 			(effects
 				(font
@@ -41025,7 +41025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 265.43 372.11 0)
 			(effects
 				(font
@@ -41154,7 +41154,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 697.23 397.51 0)
 			(effects
 				(font
@@ -41408,7 +41408,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 124.46 372.11 0)
 			(effects
 				(font
@@ -42264,7 +42264,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 595.63 372.11 0)
 			(effects
 				(font
@@ -42394,7 +42394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 360.68 421.64 0)
 			(effects
 				(font
@@ -42523,7 +42523,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 323.85 443.23 0)
 			(effects
 				(font
@@ -42952,7 +42952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 87.63 298.45 0)
 			(effects
 				(font
@@ -43316,7 +43316,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 370.84 347.98 0)
 			(effects
 				(font
@@ -44700,7 +44700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 595.63 322.58 0)
 			(effects
 				(font
@@ -45030,7 +45030,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 548.64 322.58 0)
 			(effects
 				(font
@@ -45899,7 +45899,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 77.47 322.58 0)
 			(effects
 				(font
@@ -46028,7 +46028,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 464.82 443.23 0)
 			(effects
 				(font
@@ -46548,7 +46548,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 556.26 397.51 0)
 			(effects
 				(font
@@ -46678,7 +46678,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 218.44 421.64 0)
 			(effects
 				(font
@@ -48924,7 +48924,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 181.61 347.98 0)
 			(effects
 				(font
@@ -49713,7 +49713,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 654.05 443.23 0)
 			(effects
 				(font
@@ -50804,7 +50804,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 788.67 322.58 0)
 			(effects
 				(font
@@ -51055,7 +51055,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 360.68 372.11 0)
 			(effects
 				(font
@@ -51814,7 +51814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 560.07 347.98 0)
 			(effects
 				(font
@@ -52010,7 +52010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor320O:RESC1005X40N"
+		(property "Footprint" "SamacSys_Parts:RESC1005X40N"
 			(at 563.88 154.94 0)
 			(effects
 				(font
@@ -52484,7 +52484,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 276.86 298.45 0)
 			(effects
 				(font
@@ -52613,7 +52613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 273.05 397.51 0)
 			(effects
 				(font
@@ -52993,7 +52993,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 134.62 443.23 0)
 			(effects
 				(font
@@ -53250,7 +53250,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 748.03 347.98 0)
 			(effects
 				(font
@@ -54010,7 +54010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 87.63 443.23 0)
 			(effects
 				(font
@@ -54244,7 +54244,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 407.67 421.64 0)
 			(effects
 				(font
@@ -54628,7 +54628,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 690.88 372.11 0)
 			(effects
 				(font
@@ -56145,7 +56145,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 654.05 298.45 0)
 			(effects
 				(font
@@ -56274,7 +56274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 134.62 347.98 0)
 			(effects
 				(font
@@ -56469,7 +56469,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 461.01 397.51 0)
 			(effects
 				(font
@@ -56851,7 +56851,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 124.46 322.58 0)
 			(effects
 				(font
@@ -57395,7 +57395,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 360.68 322.58 0)
 			(effects
 				(font
@@ -57525,7 +57525,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 124.46 421.64 0)
 			(effects
 				(font
@@ -57888,7 +57888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 560.07 298.45 0)
 			(effects
 				(font
@@ -58830,7 +58830,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 407.67 372.11 0)
 			(effects
 				(font
@@ -59873,7 +59873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 701.04 298.45 0)
 			(effects
 				(font
@@ -60126,7 +60126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 134.62 298.45 0)
 			(effects
 				(font
@@ -60255,7 +60255,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 607.06 347.98 0)
 			(effects
 				(font
@@ -60506,7 +60506,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 171.45 372.11 0)
 			(effects
 				(font
@@ -61119,7 +61119,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 171.45 421.64 0)
 			(effects
 				(font
@@ -61249,7 +61249,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 501.65 421.64 0)
 			(effects
 				(font
@@ -61378,7 +61378,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 229.87 347.98 0)
 			(effects
 				(font
@@ -61629,7 +61629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 788.67 421.64 0)
 			(effects
 				(font
@@ -61887,7 +61887,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 748.03 298.45 0)
 			(effects
 				(font
@@ -62120,7 +62120,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 511.81 443.23 0)
 			(effects
 				(font
@@ -62438,7 +62438,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 417.83 347.98 0)
 			(effects
 				(font
@@ -62568,7 +62568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 218.44 372.11 0)
 			(effects
 				(font
@@ -63301,7 +63301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 87.63 347.98 0)
 			(effects
 				(font
@@ -63762,7 +63762,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 417.83 298.45 0)
 			(effects
 				(font
@@ -64080,7 +64080,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 323.85 347.98 0)
 			(effects
 				(font
@@ -64333,7 +64333,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 276.86 347.98 0)
 			(effects
 				(font
@@ -64584,7 +64584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 737.87 322.58 0)
 			(effects
 				(font
@@ -64958,7 +64958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 509.27 397.51 0)
 			(effects
 				(font
@@ -65192,7 +65192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 643.89 322.58 0)
 			(effects
 				(font
@@ -65735,7 +65735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 177.8 397.51 0)
 			(effects
 				(font
@@ -66719,7 +66719,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 454.66 322.58 0)
 			(effects
 				(font
@@ -67820,7 +67820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 607.06 443.23 0)
 			(effects
 				(font
@@ -68199,7 +68199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 83.82 397.51 0)
 			(effects
 				(font
@@ -69197,7 +69197,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 171.45 322.58 0)
 			(effects
 				(font
@@ -69534,7 +69534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 603.25 397.51 0)
 			(effects
 				(font
@@ -69795,7 +69795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 643.89 421.64 0)
 			(effects
 				(font
@@ -70535,7 +70535,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 320.04 397.51 0)
 			(effects
 				(font
@@ -70873,7 +70873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 501.65 372.11 0)
 			(effects
 				(font
@@ -71736,7 +71736,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 323.85 298.45 0)
 			(effects
 				(font
@@ -71987,7 +71987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 313.69 421.64 0)
 			(effects
 				(font
@@ -73016,7 +73016,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 643.89 372.11 0)
 			(effects
 				(font
@@ -73716,7 +73716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 501.65 322.58 0)
 			(effects
 				(font
@@ -74328,7 +74328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 414.02 397.51 0)
 			(effects
 				(font
@@ -74581,7 +74581,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 226.06 397.51 0)
 			(effects
 				(font
@@ -74777,7 +74777,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 407.67 322.58 0)
 			(effects
 				(font
@@ -75031,7 +75031,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 265.43 421.64 0)
 			(effects
 				(font
@@ -75681,7 +75681,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 701.04 347.98 0)
 			(effects
 				(font
@@ -75884,7 +75884,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 690.88 322.58 0)
 			(effects
 				(font
@@ -76013,7 +76013,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WS2812BNano4684RGB-3rdParty:4684_ADA"
+		(property "Footprint" "SamacSys_Parts:4684"
 			(at 654.05 347.98 0)
 			(effects
 				(font

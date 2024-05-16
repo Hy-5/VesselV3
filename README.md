@@ -1,6 +1,16 @@
-# vessel
+# Vessel (rev 1.0)
 
-![RgbOFF](https://i.imgur.com/sOulPB4.jpg)
+![Schematics](https://i.imgur.com/HlWDl3o.png)
+
+![PCB 3D View](https://i.imgur.com/2XooKfC.png)
+
+![PCB before soldering](https://i.imgur.com/tjVfjtJ.jpg)
+
+![Soldered PCB](https://i.imgur.com/sgp3GcP.jpg)
+
+![RgbOFF](https://i.imgur.com/6wOXVmq.jpg)
+
+![Side View](https://i.imgur.com/xnHwEMR.jpg)
 
 ![RgbON](https://i.imgur.com/NzUIEAL.jpg)
 

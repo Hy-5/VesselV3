@@ -26,7 +26,7 @@
 #define USB_SUSPEND_WAKEUP_DELAY 0
 //#define NO_USB_STARTUP_CHECK
 #define F_SCL 400000L
-#define DEBOUNCE 10
+#define DEBOUNCE 25
 #define TAPPING_TERM 200
 
 // Define direct key switches (not in matrix)

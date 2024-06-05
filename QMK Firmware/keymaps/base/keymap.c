@@ -5,6 +5,7 @@
 #include "keymap_french.h"
 #include "print.h"
 #include "timer.h"
+#include "quantum.h"
 
 
 /***** rgblight_mode(mode)/rgblight_mode_noeeprom(mode) ****

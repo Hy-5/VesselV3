@@ -69,12 +69,15 @@ enum custom_keycodes {
     // Tap Dance declarations
     enum {
         TD_M_RC,
+        TD_A_RW,
     };
     
     // Tap Dance definitions
     tap_dance_action_t tap_dance_actions[] = {
         // Tap once for Menu, twice for Right Control
         [TD_M_RC] = ACTION_TAP_DANCE_DOUBLE(KC_APP, KC_RCTL),
+        // Tap once for Right Alt, twice for Right Windows
+        [TD_A_RW] = ACTION_TAP_DANCE_DOUBLE(KC_RALT, KC_RGUI),
     };
     
     
@@ -111,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_ENT,     KC_INS,  KC_PGUP,
         KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_NUHS,             KC_DEL,  KC_PGDN,
         KC_LSFT, KC_NUBS, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,  KC_UP,              PB_3,
-        KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             KC_RALT, TD(TD_M_RC), KC_LEFT, KC_DOWN, KC_RGHT
+        KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             TD(TD_A_RW), TD(TD_M_RC), KC_LEFT, KC_DOWN, KC_RGHT
     )
 };
 

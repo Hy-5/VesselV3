@@ -3740,7 +3740,9 @@ void matrix_scan_user(void) {
         if (encoder_button_state == 0) {
             encoder_button_state = 1;
             register_code(KC_LGUI);
-            tap_code(KC_TAB);
+            register_code(KC_LCTL);
+            tap_code(KC_D);
+            register_code(KC_LCTL);
             unregister_code(KC_LGUI);
             //uprintf("Encoder button pressed\n");
         }

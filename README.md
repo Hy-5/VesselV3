@@ -4,6 +4,10 @@
 
 ![PCB 3D View](https://i.imgur.com/2XooKfC.png)
 
+![Case 3D Model](https://github.com/Hy-5/VesselV3/blob/main/VesselV3Case/3DView.png)
+
+![Case Turntable](https://github.com/Hy-5/VesselV3/blob/main/VesselV3Case/3D_Demo.gif)
+
 ![PCB before soldering](https://i.imgur.com/tjVfjtJ.jpg)
 
 ![Soldered PCB](https://i.imgur.com/sgp3GcP.jpg)
